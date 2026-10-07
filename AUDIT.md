@@ -66,3 +66,16 @@ Date: 2026-10-07. Source: one WPVibe database read (all pages/posts + Yoast meta
 - 2026-10-07: Owner trashed pages 14, 16 (also 18 News, 251 Projects, 258 Testimonials are in Trash). Main menu has no links to them.
 - Keep: Slider Revolution (powers the home page hero). Still to decide: CoBlocks.
 - Next: delete inactive plugins (Akismet, Elementor, PRO Elements, Sucuri, LayerSlider, WP Contact Slider) after a fresh backup; update Gravity Forms; trash the 22 demo posts.
+
+## Decisions (NAP and service area)
+- Business address (confirmed by owner): **254 City View Dr., Evanston, WY 82930**. Replaces 389 Crossfire Trail (Afton WY) and 5454 Windsor Way (Stansbury Park UT) everywhere.
+- Phone: 800-908-4839 appears on the site everywhere (header, footer, PDF capture); owner to confirm it is the official number.
+- Service area: Wyoming, Utah, Idaho. Drop Colorado, North Dakota, South Dakota, "Mountain West" and "nationwide / nation-wide / nationally" claims. Order: Wyoming, Utah, Idaho (HQ first) unless owner says Utah is the larger market (then Utah, Wyoming, Idaho). Use one order everywhere.
+
+### Where the old references live (dry-run scan, 2026-10-08)
+- Published pages containing old addresses or out-of-area states: Home (5), About (247), Aircraft Hangars (732), Get a Quote (1940), Utah (2275), Wyoming (2283), Star Valley (2297).
+- Draft pages also containing them: Home (OLD) 2351, About us 2355, Landing page Barndo. 2320, new draft Home 2476.
+- Options: 2 rows contain "Stansbury" (footer contact widget / Theme Options), 2 rows contain "Crossfire" (top bar address in `the7` AND the child copy `the7childbrookssteelbuildings`). Update the child copy first, parent copy second.
+- Gravity Forms entries also contain old text (leave as historical data).
+- Leftover Ninja Forms tables (`nf3_*`) remain in the database after the plugin was deleted; clean up later.
+- Counts including revisions/drafts: Colorado 33, North Dakota 20, South Dakota 20, Mountain West 31, Stansbury 17, Crossfire 2, Idaho 72 (mostly page titles).
