@@ -157,3 +157,11 @@ Date: 2026-10-07. Source: one WPVibe database read (all pages/posts + Yoast meta
 - Card, button-row and "no gap under nav" CSS added to The7 `general-custom_css` (also in `snippets/home-rebuild.css`) because page-level `_wpb_post_custom_css` did not apply reliably in the owner's preview. DB check showed draft 2476 content + meta intact (no autosave override).
 - `.page-id-2476 #main/#content {padding-top:0}` removes the gap below the header. When publishing to live Home (page 5) add `.page-id-5` selectors (do NOT add earlier: it would change the live home page now).
 - Page meta CSS left in place (harmless duplicate).
+
+### Logo update (2026-10-08) - previous values (for rollback)
+- header-logo_regular: /wp-content/uploads/2020/06/BSB-Logo-57c.png (id 1752); header-logo_hd: BSB-Logo-114c.png (1756)
+- header-style-mobile-logo_regular: BSB-Logo-44c.png (1748); _hd: BSB-Logo-88c.png (1754)
+- bottom_bar-logo_regular: BSB-Logo-28.png (1745); bottom_bar-logo_hd: BSB-Logo-56.png (1749)
+- New files (996x522 PNG): ids 2536 Black, 2537 Black_on_White, 2538 Navy, 2539 Navy_on_White, 2540 White, 2541 White_on_Black.
+- Plan: header + mobile = Navy (2538); footer bottom bar (dark #373d45) = White (2540). Sized with CSS (header 68px, mobile 48px, footer 56px tall).
+- Menu fix: "Home" menu item now points to live page 2476 (old item 1946 -> page 5 draft removed).
