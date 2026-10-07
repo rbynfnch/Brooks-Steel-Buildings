@@ -121,3 +121,9 @@ Date: 2026-10-07. Source: one WPVibe database read (all pages/posts + Yoast meta
 - Page-scoped CSS stored in post meta `_wpb_post_custom_css` on draft 2476 (equal 300px card height, object-fit cover, blue gradient 0% -> 50% over the image, always-visible white text). **When publishing, copy this meta to live Home (5)** or paste into WPBakery Page Settings > Custom CSS.
 - Brand blue used: rgba(26,49,83) (#1a3153).
 - 2026-10-08: card CSS (meta `_wpb_post_custom_css` on 2476) updated: gradient 0% -> 80% navy, title 28px / text 20px, card height 320px, text locked in place on hover (no shift). Note: another open editor tab overwrote the draft once; keep other tabs closed while Claude edits.
+
+### Global button radius (2026-10-08)
+- The7 Theme Options (child copy `the7childbrookssteelbuildings`): `buttons-l_border_radius`, `buttons-m_border_radius`, `buttons-s_border_radius`, `header-elements-button-1-border_radius` changed from `100px` (pill) to `7px`. Fill/stroke unchanged. Owner said "7mm"; interpreted as 7px (7mm = ~26px). Easy to change.
+- Not changed: header-elements-soc_icons_border_radius and microwidgets-search (100px), button-2 (already 0px), inputs (1px).
+- Set `the7_force_regen_css` = 1 to rebuild The7's dynamic CSS. If buttons still look round, open The7 > Theme Options and click Save, then flush GoDaddy cache.
+- Parent copy (`the7`) not changed (rollback copy).
