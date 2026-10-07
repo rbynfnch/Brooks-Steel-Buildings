@@ -79,3 +79,10 @@ Date: 2026-10-07. Source: one WPVibe database read (all pages/posts + Yoast meta
 - Gravity Forms entries also contain old text (leave as historical data).
 - Leftover Ninja Forms tables (`nf3_*`) remain in the database after the plugin was deleted; clean up later.
 - Counts including revisions/drafts: Colorado 33, North Dakota 20, South Dakota 20, Mountain West 31, Stansbury 17, Crossfire 2, Idaho 72 (mostly page titles).
+
+### Owner answers (2026-10-08)
+- Phone 800-908-4839 confirmed.
+- Remove all "nationwide / nation-wide / nationally" claims; use Wyoming, Utah and Idaho wording.
+- Idaho towns to list: Swan Valley, Driggs, Rexburg, Idaho Falls, Pocatello, Preston, Montpelier.
+- Star Valley page (2297): keep as is for now; improve later as a landing page.
+- Apply the address/service-area changes when the WPVibe call window reopens. Plan: edit the 7 published pages and the options (child copy of Theme Options first, then parent) with targeted edits, not a global search-replace; skip drafts and old form entries; read each change back.
