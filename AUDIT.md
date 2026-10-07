@@ -140,3 +140,10 @@ Date: 2026-10-07. Source: one WPVibe database read (all pages/posts + Yoast meta
   - Hero (dark): Get a Quote -> btn-orange; Design Your Building -> btn-outline-white
   - View All Building Types, Start Designing, Ready for Pricing "Get a Quote" (light) -> default blue
   - Closing band (dark): Get a Quote -> btn-orange; Call 800-908-4839 -> btn-outline-white
+
+### Button variants APPLIED (2026-10-08)
+- Banked WPVibe reset used (owner approved). `general-custom_css` in the7childbrookssteelbuildings now = original rules + `snippets/button-variants.css` (minified).
+- Draft 2476: Hero Get a Quote = btn-orange; Hero Design Your Building = btn-outline-white; Closing Get a Quote = btn-orange; Closing Call 800-908-4839 = btn-outline-white. Verified in rendered output: el_class lands on the `<a class="... dt-btn ... btn-orange">`.
+- Blue default kept for View All Building Types, Start Designing, Ready for Pricing Get a Quote.
+- WPVibe banked resets remaining: 0. Free cap 100 calls / rolling 24h.
+- Open: confirm visual result in preview (hover colors, size match with blue buttons). Old `.orange-button` (#ff751f) still in Custom CSS; remove if unused.
