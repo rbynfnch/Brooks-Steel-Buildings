@@ -21,14 +21,13 @@
 .page-id-2476 #main{padding-top:0 !important;margin-top:0 !important;}
 .page-id-2476 #content{padding-top:0 !important;margin-top:0 !important;}
 
-/* Logo sizing (added 2026-10-08): header 68px, mobile 48px, footer 56px tall */
-.branding img.preload-me,.branding a img{width:auto !important;height:68px !important;max-width:none !important;}
-#branding-bottom img{width:auto !important;height:56px !important;max-width:none !important;}
-
 /* Process section: mountain photo with white gradient, 50% at top to 70% at bottom (single CSS background, no parallax) */
 .process-section{background-image:linear-gradient(to bottom,rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.7) 100%),url(https://brookssteelbuildings.com/wp-content/uploads/2026/10/mountain-bg-md.jpg) !important;background-size:cover !important;background-position:center center !important;background-repeat:no-repeat !important;}
 
-/* Mobile and tablet header: centered logo (tablet 52px, phone 22px tall - halved at owner request) - added 2026-10-08.
-   The mobile header reuses the .branding element (same-logo), so desktop 68px was also applied on phones. */
-@media (max-width:1100px){.masthead .header-bar{position:relative;} .masthead .header-bar .branding{position:absolute !important;left:50% !important;top:50% !important;transform:translate(-50%,-50%) !important;margin:0 !important;padding:0 !important;float:none !important;z-index:2;} .masthead .header-bar .branding img.preload-me,.masthead .header-bar .branding a img{height:52px !important;width:auto !important;max-width:none !important;}}
-@media (max-width:778px){.masthead .header-bar .branding img.preload-me,.masthead .header-bar .branding a img{height:22px !important;}}
+/* Logo sizing: desktop header 68px, footer 56px. High-specificity rules so the theme mobile styles cannot override them. */
+html body .masthead .branding img,html body .masthead .branding a img.preload-me{width:auto !important;height:68px !important;max-width:none !important;max-height:none !important;}
+html body #bottom-bar #branding-bottom img{width:auto !important;height:56px !important;max-width:none !important;}
+
+/* Mobile and tablet header: centered logo (tablet 54px, phone 44px tall). Owner phone screenshot showed the logo at full size (~380px tall) before this fix. */
+@media (max-width:1100px){html body .masthead .header-bar{position:relative !important;} html body .masthead .header-bar .branding{position:absolute !important;left:50% !important;top:50% !important;right:auto !important;bottom:auto !important;transform:translate(-50%,-50%) !important;margin:0 !important;padding:0 !important;float:none !important;width:auto !important;max-width:none !important;height:auto !important;z-index:2;} html body .masthead .header-bar .branding a{display:block !important;width:auto !important;height:auto !important;} html body .masthead .header-bar .branding img,html body .masthead .header-bar .branding a img.preload-me{height:54px !important;width:auto !important;max-width:none !important;max-height:none !important;display:block !important;}}
+@media (max-width:778px){html body .masthead .header-bar .branding img,html body .masthead .header-bar .branding a img.preload-me{height:44px !important;}}
