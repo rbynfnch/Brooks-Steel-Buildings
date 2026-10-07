@@ -115,3 +115,8 @@ Date: 2026-10-07. Source: one WPVibe database read (all pages/posts + Yoast meta
 - Shortcodes use single-quoted attributes; open once in WPBakery and click Update to normalize and generate styles. Draft preview is not visible to WPVibe (404 when logged out); owner reviews via Preview.
 - Publishing plan: copy final content into live Home (5) (keeps front-page setting) rather than swapping page IDs.
 - Slider Revolution is no longer needed for Home once published; candidate for removal later (check other pages first).
+
+### Home draft cards (2026-10-08)
+- "What are you building?" now: Commercial and Industrial (img 2074 -> /steel-buildings/commercial/), Equestrian Riding Arenas (2073 -> /steel-buildings/equestrian-riding-arenas/), Shops and Garages (2066 -> /steel-buildings/shops/). Row has el_class `home-type-cards`.
+- Page-scoped CSS stored in post meta `_wpb_post_custom_css` on draft 2476 (equal 300px card height, object-fit cover, blue gradient 0% -> 50% over the image, always-visible white text). **When publishing, copy this meta to live Home (5)** or paste into WPBakery Page Settings > Custom CSS.
+- Brand blue used: rgba(26,49,83) (#1a3153).
