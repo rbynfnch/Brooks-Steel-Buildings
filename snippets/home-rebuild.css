@@ -28,7 +28,7 @@
 /* Process section: mountain photo with white gradient, 50% at top to 70% at bottom (single CSS background, no parallax) */
 .process-section{background-image:linear-gradient(to bottom,rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.7) 100%),url(https://brookssteelbuildings.com/wp-content/uploads/2026/10/mountain-bg-md.jpg) !important;background-size:cover !important;background-position:center center !important;background-repeat:no-repeat !important;}
 
-/* Mobile and tablet header: centered logo (tablet 52px, phone 44px tall) - added 2026-10-08.
+/* Mobile and tablet header: centered logo (tablet 52px, phone 22px tall - halved at owner request) - added 2026-10-08.
    The mobile header reuses the .branding element (same-logo), so desktop 68px was also applied on phones. */
 @media (max-width:1100px){.masthead .header-bar{position:relative;} .masthead .header-bar .branding{position:absolute !important;left:50% !important;top:50% !important;transform:translate(-50%,-50%) !important;margin:0 !important;padding:0 !important;float:none !important;z-index:2;} .masthead .header-bar .branding img.preload-me,.masthead .header-bar .branding a img{height:52px !important;width:auto !important;max-width:none !important;}}
-@media (max-width:778px){.masthead .header-bar .branding img.preload-me,.masthead .header-bar .branding a img{height:44px !important;}}
+@media (max-width:778px){.masthead .header-bar .branding img.preload-me,.masthead .header-bar .branding a img{height:22px !important;}}
