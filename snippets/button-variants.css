@@ -1,0 +1,47 @@
+/* Button variants for The7 buttons (dt_default_button).
+   Usage: add el_class "btn-orange" or "btn-outline-white" to a button in WPBakery.
+   - default blue button  -> light backgrounds
+   - btn-outline-white    -> any dark background
+   - btn-orange (#f68a31) -> rare, top-priority calls to action
+   Uses inset box-shadow for the outline so button size matches the blue button. */
+
+.btn-orange.dt-btn,
+.btn-orange .dt-btn {
+  background: #f68a31 !important;
+  background-color: #f68a31 !important;
+  background-image: none !important;
+  box-shadow: inset 0 0 0 2px #f68a31 !important;
+  border-color: #f68a31 !important;
+  color: #ffffff !important;
+}
+.btn-orange.dt-btn:hover,
+.btn-orange .dt-btn:hover {
+  background: #dd7420 !important;
+  background-color: #dd7420 !important;
+  background-image: none !important;
+  box-shadow: inset 0 0 0 2px #dd7420 !important;
+  color: #ffffff !important;
+}
+
+.btn-outline-white.dt-btn,
+.btn-outline-white .dt-btn {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: inset 0 0 0 2px #ffffff !important;
+  color: #ffffff !important;
+}
+.btn-outline-white.dt-btn:hover,
+.btn-outline-white .dt-btn:hover {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  background-image: none !important;
+  color: #1a3153 !important;
+}
+
+.btn-orange.dt-btn span,
+.btn-orange .dt-btn span,
+.btn-outline-white.dt-btn span,
+.btn-outline-white .dt-btn span {
+  color: inherit !important;
+}

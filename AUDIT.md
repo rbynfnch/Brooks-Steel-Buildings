@@ -133,3 +133,10 @@ Date: 2026-10-07. Source: one WPVibe database read (all pages/posts + Yoast meta
 - Root cause of the second report: a separate draft **2512** titled "Home" (copy of the original live Home, 26,297 chars, created 19:41) was probably being opened instead. Rebuild renamed to "Home REBUILD (new design)". 2512 is unused; trash it when ready.
 - Earlier overwrite at 20:17:46 (revision 2518) restored the v1 content; something saved an older copy once. If it recurs: only edit 2476 in one place at a time.
 - Live Home (5) untouched since 18:57 (address/service-area edits).
+
+### Button variants (2026-10-08) – PENDING (WPVibe daily limit reached)
+- CSS written to `snippets/button-variants.css` (btn-orange #f68a31, btn-outline-white). Existing The7 global Custom CSS (`general-custom_css`) backed up to `backups/the7-general-custom_css-before-2026-10-08.css`; it also contains an older `.orange-button` (#ff751f) left untouched.
+- To apply: append the snippet to The7 > Theme Options > Advanced > Custom CSS (or via `option patch update ... general-custom_css`), then add `el_class` to buttons on draft 2476:
+  - Hero (dark): Get a Quote -> btn-orange; Design Your Building -> btn-outline-white
+  - View All Building Types, Start Designing, Ready for Pricing "Get a Quote" (light) -> default blue
+  - Closing band (dark): Get a Quote -> btn-orange; Call 800-908-4839 -> btn-outline-white
