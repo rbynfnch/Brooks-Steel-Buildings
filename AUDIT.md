@@ -165,3 +165,5 @@ Date: 2026-10-07. Source: one WPVibe database read (all pages/posts + Yoast meta
 - New files (996x522 PNG): ids 2536 Black, 2537 Black_on_White, 2538 Navy, 2539 Navy_on_White, 2540 White, 2541 White_on_Black.
 - Plan: header + mobile = Navy (2538); footer bottom bar (dark #373d45) = White (2540). Sized with CSS (header 68px, mobile 48px, footer 56px tall).
 - Menu fix: "Home" menu item now points to live page 2476 (old item 1946 -> page 5 draft removed).
+- Logos APPLIED: header-logo_regular/hd + header-style-mobile-logo_regular/hd = Navy (2538); bottom_bar-logo_regular/hd = White (2540). Verified in live HTML (`.branding img`, `#branding-bottom img`, both 996px natural width). Sizing CSS added to The7 `general-custom_css` (also appended to `snippets/home-rebuild.css`): header 68px, mobile 48px, footer 56px tall. Live Home is now page 2476 (front page); `.page-id-2476` no-gap rule applies to it.
+- Pending owner check: logo proportions/placement in header (menu spacing), mobile header, footer bar; GoDaddy cache flush.

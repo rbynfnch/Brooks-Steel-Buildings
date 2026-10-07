@@ -20,3 +20,8 @@
 /* No gap under the navigation bar on the rebuild draft (add .page-id-5 when published to Home) */
 .page-id-2476 #main{padding-top:0 !important;margin-top:0 !important;}
 .page-id-2476 #content{padding-top:0 !important;margin-top:0 !important;}
+
+/* Logo sizing (added 2026-10-08): header 68px, mobile 48px, footer 56px tall */
+.branding img.preload-me,.branding a img{width:auto !important;height:68px !important;max-width:none !important;}
+.mobile-branding img.preload-me,.mobile-branding a img{width:auto !important;height:48px !important;max-width:none !important;}
+#branding-bottom img{width:auto !important;height:56px !important;max-width:none !important;}
