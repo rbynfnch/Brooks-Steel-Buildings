@@ -209,3 +209,9 @@ Also: no hours, no contact email, no testimonials (none yet), do not list certif
 - Eyebrow (orange #f68a31, 14px, letter-spaced, el_class `hero-eyebrow`) above the H1: "CUSTOM STEEL BUILDINGS · WYOMING · UTAH · IDAHO".
 - Facts strip (navy #1a3153 band, el_class `facts-strip`, 4 columns, 2x2 on phones) under the hero: "30+ / Years in the steel building industry"; "8-10 Weeks / Current turnaround"; "Engineered / For your site's snow and wind loads"; "Custom / Designed for your exact needs". CSS in global Custom CSS and snippets/home-rebuild.css.
 - CONSISTENCY ISSUE: owner says current turnaround is 8-10 weeks, but published pages still say "5 to 6 weeks": Utah (2275), Wyoming (2283), Star Valley (2297, owner asked to leave that page for now). Decide whether to update 2275/2283 (and 2297 later) and any building-type pages.
+
+### Hero image lost after editor save (2026-10-08) - FIXED
+- Cause: owner re-saved Home in the WPBakery editor; the editor DROPPED `bg_image_new` (and bg size/position attrs) from both Ultimate image rows (hero + closing band) and DROPPED `heading_tag="h1"` from the H1 ultimate_heading (SEO regression). Hero text is white, so it vanished on the white page.
+- Fix: rows now `el_class="hero-bg"` / `el_class="cta-bg"` (bg_type/overlay attrs removed). Photos + 60% navy-dark overlay are CSS backgrounds in global CSS (hero = BSB-25.jpg 2026/03; closing = li-brookssteelbuildings-2.jpg 2020/06). H1 restored via heading_tag="h1".
+- LESSON: the WPBakery editor drops attrs it does not know. After any editor save, re-verify: image rows, `heading_tag` on the hero H1, el_class values. To change the hero/closing photos, edit the URLs in `.hero-bg` / `.cta-bg` in The7 Custom CSS (not in the row settings).
+- Other headings lost explicit `heading_tag="h2"` in the editor; default tag is h2, so structure is still OK. Banner titles kept h3.
