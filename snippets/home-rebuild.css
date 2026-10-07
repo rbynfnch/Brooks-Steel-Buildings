@@ -25,3 +25,8 @@
 .branding img.preload-me,.branding a img{width:auto !important;height:68px !important;max-width:none !important;}
 .mobile-branding img.preload-me,.mobile-branding a img{width:auto !important;height:48px !important;max-width:none !important;}
 #branding-bottom img{width:auto !important;height:56px !important;max-width:none !important;}
+
+/* Process section: white gradient over the mountain photo, 50% at top to 70% at bottom (added 2026-10-08) */
+.process-section{position:relative;}
+.process-section::before{content:"";position:absolute;top:0;right:0;bottom:0;left:0;background:linear-gradient(to bottom,rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.7) 100%);pointer-events:none;z-index:1;}
+.process-section .vc_row{position:relative;z-index:2;}
