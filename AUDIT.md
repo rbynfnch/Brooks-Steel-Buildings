@@ -120,3 +120,4 @@ Date: 2026-10-07. Source: one WPVibe database read (all pages/posts + Yoast meta
 - "What are you building?" now: Commercial and Industrial (img 2074 -> /steel-buildings/commercial/), Equestrian Riding Arenas (2073 -> /steel-buildings/equestrian-riding-arenas/), Shops and Garages (2066 -> /steel-buildings/shops/). Row has el_class `home-type-cards`.
 - Page-scoped CSS stored in post meta `_wpb_post_custom_css` on draft 2476 (equal 300px card height, object-fit cover, blue gradient 0% -> 50% over the image, always-visible white text). **When publishing, copy this meta to live Home (5)** or paste into WPBakery Page Settings > Custom CSS.
 - Brand blue used: rgba(26,49,83) (#1a3153).
+- 2026-10-08: card CSS (meta `_wpb_post_custom_css` on 2476) updated: gradient 0% -> 80% navy, title 28px / text 20px, card height 320px, text locked in place on hover (no shift). Note: another open editor tab overwrote the draft once; keep other tabs closed while Claude edits.
