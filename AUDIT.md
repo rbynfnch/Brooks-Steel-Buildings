@@ -18,14 +18,18 @@ Date: 2026-10-07. Source: one WPVibe database read (all pages/posts + Yoast meta
 - About page title says "Idaho, Utah & Wyoming"; the home page and footer say Wyoming/Utah. Addresses disagree too (Afton WY, Star Valley WY, Stansbury Park UT).
 
 **Site health**
-- 20 active plugins, including two page builders (Elementor + WPBakery) plus Ultimate VC Addons, Revolution Slider, LayerSlider, and four form plugins (Contact Form 7, Gravity Forms, Ninja Forms, WPForms Lite). Likely heavy and partly unused.
-- "Search Engine Visibility" plugin is active: confirm it is not discouraging indexing.
-- Sucuri appears to block some admin REST saves (widgets/page settings); WPVibe saves work.
+- 20 plugins installed: 12 active, 8 inactive.
+  - Active: CoBlocks, Gravity Forms, Ninja Forms, Search Engine Visibility, Site Kit, Slider Revolution, The7 Elements, Ultimate Addons for WPBakery, WPBakery, WPVibe, Yoast Duplicate Post, Yoast SEO.
+  - Inactive: Akismet, Contact Form 7, Elementor, PRO Elements, Sucuri (plugin), LayerSlider, WP Contact Slider, WPForms Lite.
+- The site is built with **WPBakery**, not Elementor (Elementor is inactive). Pages 14 and 16 (and the demo posts) were built in Elementor and are published; check how they render.
+- Indexing is ON (`blog_public = 1`).
+- Updates available: Gravity Forms (2.7.17), Contact Form 7, WPForms Lite. Update after a backup.
+- GoDaddy's network firewall (Sucuri rules, not the plugin) blocks some admin REST saves and some long SQL reads (`SQLi17`) from WPVibe. Simple reads and WP-CLI commands work.
 
 ## Task list (priority order)
 
 ### A. Quick wins (SEO / housekeeping)
-1. Confirm indexing is on (Settings → Reading, "Discourage search engines" unchecked; check the Search Engine Visibility plugin).
+1. ~~Confirm indexing is on~~ Done: indexing is ON.
 2. Move the 22 demo posts to Trash or draft; remove blog widgets that point at them.
 3. Write unique SEO title + meta description + focus keyword for every published page (start with Home, Steel Buildings, 9 building types, 3 location pages, About, Get a Quote).
 4. Fix demo slugs with 301 redirects: `/logistic-services/`, `/vehicle-fleet/`, `/home-2/`.
@@ -50,7 +54,7 @@ Date: 2026-10-07. Source: one WPVibe database read (all pages/posts + Yoast meta
 19. Improve card "Details" buttons (contrast) and shorten the home page (it prints to 12 pages).
 
 ### D. Performance / maintenance
-20. Remove unused plugins one at a time after backup (extra form plugins, second page builder, unused sliders, `wp-contact-slider`).
+20. Plugin cleanup after backup: delete the 8 inactive plugins; confirm which of Gravity Forms / Ninja Forms is the live quote form and remove the other; confirm Slider Revolution is used by the hero; confirm CoBlocks is used; update Gravity Forms.
 21. Ask Sucuri/GoDaddy to allow `/wp-json/wp/v2/` for logged-in admins so normal saves work.
 22. Move custom CSS/PHP into the child theme and set up GitHub → GoDaddy deployment.
 23. Create the 3 missing pages (Barndominiums, Custom Steel Buildings, Design Your Own) and link the home cards.
