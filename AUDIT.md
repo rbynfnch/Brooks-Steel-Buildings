@@ -101,3 +101,8 @@ Date: 2026-10-07. Source: one WPVibe database read (all pages/posts + Yoast meta
 - Verified: 0 remaining matches for Crossfire / Stansbury / nationally in the options table; none in published pages.
 - Owner note: wp-admin saves (widgets, page settings) fail with "not a valid JSON response" = firewall blocking REST. Ask GoDaddy/Sucuri to allow it. WPVibe edits work.
 - Task "Confirm service area + NAP" is DONE. Remaining: flush GoDaddy cache and visually confirm footer/top bar; drafts (Home OLD, About us, Landing Barndo.) still contain old text; Star Valley page (2297) left as is.
+
+### Save problem (2026-10-08)
+- wp-admin widget saves failed with "not a valid JSON response" (firewall blocking REST). GoDaddy support had owner install the **Classic Widgets** plugin; widget/sidebar saves now work. Site Health says REST API is available (read check only).
+- Still to confirm: page saves (block editor / page settings) and Gravity Forms edits. If they fail, options are the Classic Editor plugin or a proper Sucuri exception for `/wp-json/` and `?rest_route=`.
+- Plugin added: Classic Widgets (keep unless the firewall exception makes it unnecessary).
