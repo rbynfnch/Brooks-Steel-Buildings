@@ -173,3 +173,25 @@ Date: 2026-10-07. Source: one WPVibe database read (all pages/posts + Yoast meta
 - Owner rules (compliance): do NOT name the manufacturer; do NOT say BSB itself is IAS accredited; MBMA is membership, not certification; say "UL Classified" (never "UL Certified"), not every building/component; ENERGY STAR only "where applicable", no tax-credit promises (owner's tax-incentive sentence was cut off, so no tax wording was added). No logos used (trademarks need permission). Do not publish hours, contact email, testimonials, manufacturer name or warranty/certification details lifted from the manufacturer site (owner decision).
 - Heading changed from "ENERGY STAR(R) Partner" to "ENERGY STAR(R) Cool Roof Options" to avoid implying BSB is an ENERGY STAR partner. Owner may revert.
 - Home plan still open: eyebrow line + facts strip, Serving WY/UT/ID section, FAQ with schema, inline quote form, Featured Projects (future), SEO title/description.
+
+### MANDATORY content accuracy rules (owner, 2026-10-08) - apply to ALL public copy
+1. NEVER name the manufacturer anywhere in public-facing website copy.
+2. NEVER link customers directly to the manufacturer's website.
+3. NEVER use manufacturer logos.
+4. NEVER use wording that encourages customers to contact the manufacturer directly.
+5. Do not claim BSB itself holds IAS AC472 accreditation.
+6. Do not call MBMA membership a certification.
+7. Do not change "UL Classified" to "UL Certified."
+8. Do not imply every BSB building automatically has every listed certification or warranty.
+9. Do not describe a 30-year Kynar warranty as a 30-year building warranty (it is a FINISH warranty).
+10. Do not guarantee tax-credit eligibility.
+11. Do not publish TDI claims unless separately verified and specifically approved for public use.
+12. Do not invent certification numbers, approval numbers or warranty terms.
+13. Preserve the distinction between manufacturing credentials and project-specific approvals.
+14. Keep warranty language subject to the applicable warranty documents and project specifications.
+Also: no hours, no contact email, no testimonials (none yet), do not list certification/warranty details taken from the manufacturer website beyond the owner-approved copy.
+
+### Home: tax footnote + Warranty section added (live Home 2476)
+- Footnote under credentials now also includes the owner-approved tax wording ("Certain qualifying building components may be eligible ... Consult your tax professional for current eligibility.").
+- New section "Warranty Options for Long-Term Performance": intro + 6 cards (1-Year Material & Workmanship; 20-Year Panel Material; 20-Year Finish (acrylic-coated Galvalume); 25-Year SMP Finish; 30-Year Kynar 500 Finish - labeled as a finish warranty, not a building warranty; 20-Year Weathertightness options) + disclaimer line. Placed after credentials, before "Design It in 3D".
+- Check run: no manufacturer name, no manufacturer site link, no "UL Certified", no "BSB is IAS", no TDI in page content.
