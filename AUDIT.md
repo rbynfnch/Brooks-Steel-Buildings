@@ -147,3 +147,8 @@ Date: 2026-10-07. Source: one WPVibe database read (all pages/posts + Yoast meta
 - Blue default kept for View All Building Types, Start Designing, Ready for Pricing Get a Quote.
 - WPVibe banked resets remaining: 0. Free cap 100 calls / rolling 24h.
 - Open: confirm visual result in preview (hover colors, size match with blue buttons). Old `.orange-button` (#ff751f) still in Custom CSS; remove if unused.
+
+### Hero/CTA spacing (2026-10-08)
+- Hero H1 now two lines via `<br>` (renders as `<br />` inside the single H1): "Built for Your Project." / "Engineered for the Long Haul."
+- H1 margin-bottom 20px -> 32px; body text margin-bottom 40px (sub_heading_margin).
+- Hero and CTA button rows tagged `hero-btns` / `cta-btns`: page-scoped CSS (meta `_wpb_post_custom_css` on 2476) makes them flex with a 20px gap; CTA row centered. Remember to copy this CSS when publishing to live Home (5).
