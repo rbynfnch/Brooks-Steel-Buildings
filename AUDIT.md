@@ -106,3 +106,12 @@ Date: 2026-10-07. Source: one WPVibe database read (all pages/posts + Yoast meta
 - wp-admin widget saves failed with "not a valid JSON response" (firewall blocking REST). GoDaddy support had owner install the **Classic Widgets** plugin; widget/sidebar saves now work. Site Health says REST API is available (read check only).
 - Still to confirm: page saves (block editor / page settings) and Gravity Forms edits. If they fail, options are the Classic Editor plugin or a proper Sucuri exception for `/wp-json/` and `?rest_route=`.
 - Plugin added: Classic Widgets (keep unless the firewall exception makes it unnecessary).
+
+### Home page rebuild (draft 2476) – v1 written 2026-10-08
+- Draft Home (2476) rewritten via REST (status stays draft; old content kept as revision 2513). Live Home (5) untouched.
+- Sections: static-image hero (one H1, Get a Quote + Design Your Building), "What are you building?" (3 interactive banners + View All Building Types), Design It in 3D + Ready for Pricing, 5-step process (vc_section with parallax image 2484), closing CTA band with Get a Quote + Call 800-908-4839.
+- Decisions: static hero (no Slider Revolution); 3 cards + link to Steel Buildings hub (249). Left out until confirmed: Featured Projects, trust badges/logos, "Trusted Since 1971", "Financially strong".
+- Placeholder images by media ID: hero 2315, cards 2257/2265/2253, 3D 2370, CTA band 2086, process bg 2484. Owner to swap.
+- Shortcodes use single-quoted attributes; open once in WPBakery and click Update to normalize and generate styles. Draft preview is not visible to WPVibe (404 when logged out); owner reviews via Preview.
+- Publishing plan: copy final content into live Home (5) (keeps front-page setting) rather than swapping page IDs.
+- Slider Revolution is no longer needed for Home once published; candidate for removal later (check other pages first).
