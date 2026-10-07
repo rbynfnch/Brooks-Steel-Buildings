@@ -1,0 +1,35 @@
+.alignfull {
+  margin-top: calc(2 * 1rem);
+  margin-right: 0;
+  margin-bottom: calc(2 * 1rem);
+  margin-left: 0;
+  max-width: 100%;
+}
+
+.wp-block-image.alignfull img {
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.orange-button {
+  background-color: #ff751f;
+  color: #ffffff !important;
+  padding: 16px 34px;
+  border-radius: 4px;
+  font-family: "Arial Nova", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  display: inline-block;
+  border: 2px solid #ff751f;
+  transition: all 0.25s ease-in-out;
+}
+
+.orange-button:hover {
+  background-color: transparent;
+  color: #ff751f !important;
+  border-color: #ff751f;
+}
