@@ -127,3 +127,9 @@ Date: 2026-10-07. Source: one WPVibe database read (all pages/posts + Yoast meta
 - Not changed: header-elements-soc_icons_border_radius and microwidgets-search (100px), button-2 (already 0px), inputs (1px).
 - Set `the7_force_regen_css` = 1 to rebuild The7's dynamic CSS. If buttons still look round, open The7 > Theme Options and click Save, then flush GoDaddy cache.
 - Parent copy (`the7`) not changed (rollback copy).
+
+### Home draft "reverted" investigation (2026-10-08)
+- DB check: rebuild draft **2476** was intact (hero, 3 cards, class, 80% gradient CSS in `_wpb_post_custom_css`); last saved 20:20:39; no newer revisions or autosaves.
+- Root cause of the second report: a separate draft **2512** titled "Home" (copy of the original live Home, 26,297 chars, created 19:41) was probably being opened instead. Rebuild renamed to "Home REBUILD (new design)". 2512 is unused; trash it when ready.
+- Earlier overwrite at 20:17:46 (revision 2518) restored the v1 content; something saved an older copy once. If it recurs: only edit 2476 in one place at a time.
+- Live Home (5) untouched since 18:57 (address/service-area edits).
