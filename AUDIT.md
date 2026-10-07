@@ -58,3 +58,11 @@ Date: 2026-10-07. Source: one WPVibe database read (all pages/posts + Yoast meta
 21. Ask Sucuri/GoDaddy to allow `/wp-json/wp/v2/` for logged-in admins so normal saves work.
 22. Move custom CSS/PHP into the child theme and set up GitHub → GoDaddy deployment.
 23. Create the 3 missing pages (Barndominiums, Custom Steel Buildings, Design Your Own) and link the home cards.
+
+## Progress log
+- 2026-10-07: Child theme `dt-the7-child` active; Theme Options copied from parent; menus intact.
+- 2026-10-07: Sidebar disabled on all 10 pages under Steel Buildings (via WPVibe, `_dt_sidebar_position = disabled`).
+- 2026-10-07: Owner deleted Contact Form 7, Ninja Forms, WPForms Lite. Gravity Forms is the only form plugin. **Quote form test still pending.**
+- 2026-10-07: Owner trashed pages 14, 16 (also 18 News, 251 Projects, 258 Testimonials are in Trash). Main menu has no links to them.
+- Keep: Slider Revolution (powers the home page hero). Still to decide: CoBlocks.
+- Next: delete inactive plugins (Akismet, Elementor, PRO Elements, Sucuri, LayerSlider, WP Contact Slider) after a fresh backup; update Gravity Forms; trash the 22 demo posts.
