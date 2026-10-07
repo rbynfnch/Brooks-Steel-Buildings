@@ -86,3 +86,12 @@ Date: 2026-10-07. Source: one WPVibe database read (all pages/posts + Yoast meta
 - Idaho towns to list: Swan Valley, Driggs, Rexburg, Idaho Falls, Pocatello, Preston, Montpelier.
 - Star Valley page (2297): keep as is for now; improve later as a landing page.
 - Apply the address/service-area changes when the WPVibe call window reopens. Plan: edit the 7 published pages and the options (child copy of Theme Options first, then parent) with targeted edits, not a global search-replace; skip drafts and old form entries; read each change back.
+
+### Applied 2026-10-08 (service area / NAP)
+- Street `5454 Windsor Way` -> `254 City View Dr.` via search-replace (posts + options), approved by owner.
+- Targeted edits (WPVibe `content/edit`, revisions kept, no approval needed) on published pages: Get a Quote (1940), Home (5), About (247 incl. title), Utah (2275), Wyoming (2283). Removed Colorado / ND / SD / Mountain West / Northern Plains / nationwide wording; order is Wyoming, Utah, Idaho; "27 years" -> "30+ years"; Idaho towns list now Preston, Swan Valley, Idaho Falls, Pocatello, Driggs, Rexburg, Montpelier.
+- Read-back check: no published page still contains the old terms. Drafts still do (Home OLD 2351, About us 2355, Landing page Barndo. 2320).
+- Left as is by owner request: Star Valley page (2297) still says "Located in Afton, Wyoming".
+- Pending owner approval (settings, not pages): top-bar address `389 Crossfire Trail, Afton, WY 83110` (2 option rows), footer widget city/zip `Stansbury Park, UT 84074`, footer accordion "services nationally" text.
+- Lesson: prefer `content/edit` (targeted, keeps revisions, no approval) over database-wide search-replace for page text. Use search-replace only for serialized options.
+- Open: staging links (`k9q.9e0.myftpupload.com`) in Home buttons and the Proofpoint link; owner will replace during the home page rebuild.
