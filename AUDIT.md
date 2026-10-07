@@ -95,3 +95,9 @@ Date: 2026-10-07. Source: one WPVibe database read (all pages/posts + Yoast meta
 - Pending owner approval (settings, not pages): top-bar address `389 Crossfire Trail, Afton, WY 83110` (2 option rows), footer widget city/zip `Stansbury Park, UT 84074`, footer accordion "services nationally" text.
 - Lesson: prefer `content/edit` (targeted, keeps revisions, no approval) over database-wide search-replace for page text. Use search-replace only for serialized options.
 - Open: staging links (`k9q.9e0.myftpupload.com`) in Home buttons and the Proofpoint link; owner will replace during the home page rebuild.
+
+### Completed 2026-10-08
+- Settings approved and applied: top-bar address (the7 and child options) -> 254 City View Dr., Evanston, WY 82930; footer contact widget -> same address; footer accordion "nationally" -> "in Wyoming, Utah, and Idaho".
+- Verified: 0 remaining matches for Crossfire / Stansbury / nationally in the options table; none in published pages.
+- Owner note: wp-admin saves (widgets, page settings) fail with "not a valid JSON response" = firewall blocking REST. Ask GoDaddy/Sucuri to allow it. WPVibe edits work.
+- Task "Confirm service area + NAP" is DONE. Remaining: flush GoDaddy cache and visually confirm footer/top bar; drafts (Home OLD, About us, Landing Barndo.) still contain old text; Star Valley page (2297) left as is.
