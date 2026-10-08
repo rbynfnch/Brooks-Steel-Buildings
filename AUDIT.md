@@ -216,3 +216,8 @@ Also: no hours, no contact email, no testimonials (none yet), do not list certif
 - LESSON: the WPBakery editor drops attrs it does not know. After any editor save, re-verify: image rows, `heading_tag` on the hero H1, el_class values. To change the hero/closing photos, edit the URLs in `.hero-bg` / `.cta-bg` in The7 Custom CSS (not in the row settings).
 - Other headings lost explicit `heading_tag="h2"` in the editor; default tag is h2, so structure is still OK. Banner titles kept h3.
 - 2026-10-08 Hero/closing photos not full width: Ultimate `bg_override="ex-full"` only works with the editor image setting. Switched `hero-bg` and `cta-bg` rows to native `full_width="stretch_row"`. Verified in live HTML: row has data-vc-full-width="true" and class hero-bg; H1 present (ultimate-heading ... h1). The page builder JS stretches the row after load; owner to confirm edge-to-edge look (desktop + phone).
+
+## 2026-10-08 — Home: quote form, FAQ, SEO
+- Page 2476: added `quote-section` row (Gravity Form 1 inline + "helpful to have ready" + phone) and `faq-section` row (8 `vc_toggle` FAQs, 8–10 week turnaround) with FAQPage JSON-LD (vc_raw_html), inserted before the closing band.
+- Yoast (2476): title "Custom Steel Buildings in Wyoming, Utah & Idaho | Brooks Steel Buildings"; meta description (155 chars); focus keyword "custom steel buildings". Verified live in `<head>`.
+- Open: "5 to 6 weeks" wording on Utah/Wyoming/Star Valley pages vs 8–10 weeks on Home.
