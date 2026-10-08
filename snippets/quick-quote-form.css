@@ -1,0 +1,15 @@
+/* Home quick-quote form (Gravity Form 2): compact, two rows on desktop */
+.quote-section .gform_wrapper{max-width:900px;margin:0 auto}
+.quote-section .gform_wrapper form{display:flex;flex-wrap:wrap;align-items:flex-end;gap:10px 14px}
+.quote-section .gform_wrapper .gform_body{flex:1 1 100%}
+.quote-section .gform_wrapper ul.gform_fields{display:flex;flex-wrap:wrap;gap:8px 14px;margin:0;padding:0;list-style:none}
+.quote-section .gform_wrapper li.gfield{flex:1 1 100%;margin:0;padding:0;width:auto}
+.quote-section .gform_wrapper li[id^="field_2_8"],.quote-section .gform_wrapper li[id^="field_2_9"],.quote-section .gform_wrapper li[id^="field_2_10"]{flex:1 1 calc(33.333% - 10px)}
+.quote-section .gform_wrapper li[id^="field_2_14"],.quote-section .gform_wrapper li[id^="field_2_7"]{flex:1 1 calc(50% - 7px)}
+.quote-section .gform_wrapper input[type=text],.quote-section .gform_wrapper input[type=tel],.quote-section .gform_wrapper input[type=email],.quote-section .gform_wrapper textarea{width:100%;box-sizing:border-box;padding:8px 10px;font-size:15px}
+.quote-section .gform_wrapper textarea{height:44px;min-height:44px}
+.quote-section .gform_wrapper .gfield_label{font-size:13px;margin-bottom:2px;padding:0}
+.quote-section .gform_wrapper .ginput_complex span{display:inline-block;width:calc(50% - 6px);padding:0}
+.quote-section .gform_wrapper .gform_footer{margin:0;padding:0}
+.quote-section .gform_wrapper .gform-field-label--type-sub{font-size:11px}
+@media(max-width:778px){.quote-section .gform_wrapper li.gfield{flex:1 1 100%!important}}
