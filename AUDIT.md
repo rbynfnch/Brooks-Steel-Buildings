@@ -226,3 +226,4 @@ Also: no hours, no contact email, no testimonials (none yet), do not list certif
 - Privacy Policy published: https://brookssteelbuildings.com/privacy-policy/ (to link from footer and near quote form submit; not yet linked).
 - Footer column copy drafted in snippets/footer-widget-copy.md; awaiting approval and quota to apply (3rd footer widget).
 - Project page template shortcode written: snippets/project-template.txt (hero w/ facts, gallery + details, why-it-worked, CTA band, inline style block). Paste via WPBakery Classic Mode. Hero photo set per page in Design Options > Background image. Related-projects carousel to be added when Portfolio is enabled. Buttons link to /#quote (needs id="quote" on Home quote row).
+- About page draft copy: snippets/about-page-copy.md (awaiting approval).
