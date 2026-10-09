@@ -1,15 +1,162 @@
 {
- "draft_title":"Commercial and Retail (rebuild)","live_title":"Commercial and Retail Steel Buildings",
- "hero_image_url":"https://brookssteelbuildings.com/wp-content/uploads/2020/06/IMG_1721-scaled.jpg",
- "crumb":"Commercial and Retail","eyebrow":"COMMERCIAL AND RETAIL",
- "h1":"Commercial &amp; Retail Steel Buildings in Wyoming, Utah &amp; Idaho",
- "answer":"Brooks Steel Buildings supplies custom pre-engineered steel buildings for retail stores, offices, warehouses, and distribution centers. Every building is designed for your site and use.",
- "uses_h2":"What Commercial Steel Buildings Are Used For","uses_sub":"Open, flexible space for the way your business works.",
- "uses":[["fas fa-store","Retail Stores and Strip Centers","Open floor plans for storefronts and multi-tenant buildings."],["far fa-building","Offices","Professional spaces designed for your layout."],["fas fa-warehouse","Warehouses and Distribution","Clear-span space for inventory and loading."],["fas fa-car-side","Showrooms and Service Buildings","Large open interiors with room to grow."]],
- "why_h2":"Why Businesses Choose Steel","why_sub":"Steel buildings fit the way commercial spaces are used and changed over time.",
- "why":[["fas fa-expand-arrows-alt","Clear-Span Interiors","Longer spans mean fewer interior columns and more usable floor space for your layout."],["fas fa-sync-alt","Flexible and Adaptable","Open interiors can be reconfigured for changing uses, and steel buildings can often be expanded later."],["fas fa-clock","Faster Construction","Components are prepared ahead of time and go up quickly, which can shorten the schedule and help you open sooner."],["fas fa-shield-alt","Durable and Low Maintenance","Steel is built to resist weather and holds up over time."],["fas fa-palette","Attractive and Customizable","Choose wall and roof colors, doors, windows, and trim to match your brand."],["fas fa-recycle","Recyclable Material","Steel can be recycled repeatedly without losing its basic properties."]],
- "codes_line":"Commercial sites often have zoning and height limits. We design to your local codes and prepare engineered plans for permitting. Requirements vary by location.",
- "faq_h2":"Commercial Steel Building Questions",
- "faq":[["What types of commercial buildings can you supply?","Retail stores, strip centers, offices, warehouses, and distribution centers, each custom designed for your site and use."],["Can a commercial steel building have offices and storefront windows?","Yes. Doors, windows, and framed openings can be designed into the building. Tell us what you need and we will include it in your quote."],["Can I add on to the building later?","Steel buildings can often be designed so they can be expanded later. Let us know your future plans so the design allows for it."],["How long does it take to get a commercial steel building?","Our current turnaround is 8 to 10 weeks. Timelines can vary with project size, options, and demand."],["Do you help with permits?","We prepare engineered plans for permitting. Permit requirements vary by location, so check with your local building department."]],
- "related":[["Industrial and Warehouse","/steel-buildings/industrial/"],["Shops and Garages","/steel-buildings/shops/"],["Storage Units","/steel-buildings/storage-unit/"]]
+ "draft_title": "Commercial and Retail (rebuild)",
+ "live_title": "Commercial and Retail Steel Buildings",
+ "hero_image_url": "https://brookssteelbuildings.com/wp-content/uploads/2020/06/IMG_1721-scaled.jpg",
+ "crumb": "Commercial and Retail",
+ "eyebrow": "COMMERCIAL AND RETAIL",
+ "h1": "Commercial &amp; Retail Steel Buildings in Wyoming, Utah &amp; Idaho",
+ "answer": "Brooks Steel Buildings supplies custom pre-engineered steel buildings for retail stores, offices, warehouses, and distribution centers. Every building is designed for your site and use.",
+ "uses_h2": "What Commercial Steel Buildings Are Used For",
+ "uses_sub": "Open, flexible space for the way your business works.",
+ "uses": [
+  [
+   "fas fa-store",
+   "Retail Stores and Strip Centers",
+   "Open floor plans for storefronts and multi-tenant buildings."
+  ],
+  [
+   "far fa-building",
+   "Offices",
+   "Professional spaces designed for your layout."
+  ],
+  [
+   "fas fa-warehouse",
+   "Warehouses and Distribution",
+   "Clear-span space for inventory and loading."
+  ],
+  [
+   "fas fa-car-side",
+   "Showrooms and Service Buildings",
+   "Large open interiors with room to grow."
+  ]
+ ],
+ "why_h2": "Why Businesses Choose Steel",
+ "why_sub": "Steel buildings fit the way commercial spaces are used and changed over time.",
+ "why": [
+  [
+   "fas fa-expand-arrows-alt",
+   "Clear-Span Interiors",
+   "Longer spans mean fewer interior columns, so you can lay out aisles, displays, inventory, or equipment the way your business works."
+  ],
+  [
+   "fas fa-sync-alt",
+   "Flexible and Adaptable",
+   "Open interiors can be reconfigured for changing uses, and steel buildings can often be expanded later."
+  ],
+  [
+   "fas fa-clock",
+   "Faster Construction",
+   "Components are prepared ahead of time and go up quickly, which can shorten the schedule and help you open sooner."
+  ],
+  [
+   "fas fa-shield-alt",
+   "Durable and Low Maintenance",
+   "Steel is built to resist weather and holds up over time."
+  ],
+  [
+   "fas fa-palette",
+   "Attractive and Customizable",
+   "Choose wall and roof colors, doors, windows, and trim to match your brand."
+  ],
+  [
+   "fas fa-recycle",
+   "Recyclable Material",
+   "Steel can be recycled repeatedly without losing its basic properties."
+  ]
+ ],
+ "codes_line": "Commercial sites often have zoning and height limits. We design to your local codes and prepare engineered plans for permitting. Requirements vary by location.",
+ "faq_h2": "Commercial Steel Building Questions",
+ "faq": [
+  [
+   "What types of commercial buildings can you supply?",
+   "Retail stores, strip centers, offices, warehouses, and distribution centers, each custom designed for your site and use."
+  ],
+  [
+   "Can a commercial steel building have offices and storefront windows?",
+   "Yes. Doors, windows, and framed openings can be designed into the building. Tell us what you need and we will include it in your quote."
+  ],
+  [
+   "Can I add on to the building later?",
+   "Steel buildings can often be designed so they can be expanded later. Let us know your future plans so the design allows for it."
+  ],
+  [
+   "How long does it take to get a commercial steel building?",
+   "Our current turnaround is 8 to 10 weeks. Timelines can vary with project size, options, and demand."
+  ],
+  [
+   "Do you help with permits?",
+   "We prepare engineered plans for permitting. Permit requirements vary by location, so check with your local building department."
+  ]
+ ],
+ "related": [
+  [
+   "Industrial and Warehouse",
+   "/steel-buildings/industrial/"
+  ],
+  [
+   "Shops and Garages",
+   "/steel-buildings/shops/"
+  ],
+  [
+   "Storage Units",
+   "/steel-buildings/storage-unit/"
+  ]
+ ],
+ "facts": [
+  [
+   "30+",
+   "Years in the steel building industry"
+  ],
+  [
+   "8–10 Weeks",
+   "Current turnaround"
+  ],
+  [
+   "Engineered",
+   "For your site’s snow and wind loads"
+  ],
+  [
+   "WY · UT · ID",
+   "Where we supply buildings"
+  ]
+ ],
+ "look_h2": "Built to Look Like Your Business",
+ "look_sub": "A steel building does not have to look like a warehouse.",
+ "look": [
+  [
+   "fas fa-palette",
+   "Colors and Finishes",
+   "Choose wall and roof colors and trim to match your brand."
+  ],
+  [
+   "fas fa-door-open",
+   "Doors and Entries",
+   "Overhead and walk doors placed where your operation needs them."
+  ],
+  [
+   "fas fa-store",
+   "Windows and Storefront Openings",
+   "Windows and framed openings for storefronts and offices."
+  ],
+  [
+   "fas fa-umbrella",
+   "Canopies and Overhangs",
+   "Entry canopies and overhangs to protect customers and add curb appeal."
+  ]
+ ],
+ "look_line": "Tell us the look you want and we will include it in your quote.",
+ "photos": [
+  [
+   "https://brookssteelbuildings.com/wp-content/uploads/2020/11/IMG_3713-scaled.jpg",
+   "Commercial steel building project"
+  ],
+  [
+   "https://brookssteelbuildings.com/wp-content/uploads/2020/11/IMG_1723-scaled.jpg",
+   "Commercial steel building project"
+  ],
+  [
+   "https://brookssteelbuildings.com/wp-content/uploads/2020/11/IMG_1153-scaled.jpg",
+   "Commercial steel building project"
+  ]
+ ]
 }

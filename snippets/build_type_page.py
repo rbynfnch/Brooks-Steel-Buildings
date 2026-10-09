@@ -32,7 +32,9 @@ related=' '.join(f'<a href="{u}">{t}</a>' for t,u in spec['related'])
 facts=''.join(f'[vc_column width="1/4"][vc_column_text]<div class="fact-num">{n}</div><div class="fact-label">{l}</div>[/vc_column_text][/vc_column]' for n,l in spec['facts'])
 strip=f'[vc_row bg_type="bg_color" bg_override="ex-full" el_class="facts-strip" bg_color_value="#1a3153"]{facts}[/vc_row]'
 look=''.join(card(*u) for u in spec['look'])
-lookrow=f'[vc_row el_class="about-alt" full_width="stretch_row"][vc_column][vc_empty_space height="40px"]{H(spec["look_h2"],spec["look_sub"])}[vc_empty_space height="20px"][vc_column_text]<div class="about-cards six">{look}</div><p style="text-align:center;margin-top:24px;">{spec["look_line"]}</p>[/vc_column_text][vc_empty_space height="40px"][/vc_column][/vc_row]'
+imgs=''.join(f'<img src="{u}" alt="{a}" loading="lazy" style="flex:1 1 240px;min-width:0;width:calc(33% - 11px);height:240px;object-fit:cover;border-radius:6px;">' for u,a in spec.get('photos',[]))
+photos=f'<div style="display:flex;flex-wrap:wrap;gap:16px;margin-top:28px;">{imgs}</div>' if imgs else ''
+lookrow=f'[vc_row el_class="about-alt" full_width="stretch_row"][vc_column][vc_empty_space height="40px"]{H(spec["look_h2"],spec["look_sub"])}[vc_empty_space height="20px"][vc_column_text]<div class="about-cards four">{look}</div><p style="text-align:center;margin-top:24px;">{spec["look_line"]}</p>{photos}[/vc_column_text][vc_empty_space height="40px"][/vc_column][/vc_row]'
 c=(f'[vc_row el_class="hero-bg type-hero" full_width="stretch_row"][vc_column][vc_empty_space height="40px"]'
  f'[vc_column_text]<p class="type-crumbs"><a href="/steel-buildings/">Steel Buildings</a> &raquo; {spec["crumb"]}</p>[/vc_column_text]'
  f'[vc_column_text el_class="hero-eyebrow"]<p>{spec["eyebrow"]}</p>[/vc_column_text]'
