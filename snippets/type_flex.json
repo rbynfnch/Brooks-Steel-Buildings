@@ -27,7 +27,7 @@
  "intro_h2": "What Is a Flex Building?",
  "intro_p": "A flex building combines complementary uses under one roof, such as an office or showroom at the front and a warehouse or shop at the back. One building, one site, and a layout built around how your business actually works. Flex buildings are also a popular model for investors who build to lease, similar to storage units.",
  "uses_h2": "Flex Building Configurations",
- "uses_sub": "Pick the combination that fits your business.",
+ "uses_sub": "Typical layouts include a finished entrance and offices up front, a showroom or sales area, and an open shop or warehouse behind, with overhead doors for vehicles and deliveries. These are design options, and what fits depends on your use, zoning, and code.",
  "uses": [
   [
    "far fa-building",
@@ -84,7 +84,7 @@
    "Plan office, showroom, and work areas in one footprint, with room to expand later."
   ]
  ],
- "codes_line": "Flex and multi-tenant buildings often have specific zoning and code requirements. We design to your local requirements, and requirements vary by location.",
+ "codes_line": "Flex and multi-tenant buildings often have specific zoning and code requirements. Multi-tenant layouts also need planning for separation walls, utilities, fire protection, access, and code compliance. Requirements vary by location.",
  "look_h2": "Who Uses Flex Buildings?",
  "look_sub": "Businesses that need a front-of-house and a back-of-house in the same building.",
  "look": [
@@ -100,8 +100,8 @@
   ],
   [
    "fas fa-truck-pickup",
-   "Dealers, Service, and Distribution",
-   "Sales, service bays, parts, and storage in one building."
+   "Dealers, Service, and Production",
+   "Sales, service bays, parts, light production, and storage in one building."
   ],
   [
    "fas fa-building",
@@ -122,16 +122,24 @@
    "Yes. We design the building around the office, work, and storage areas you need and the doors and openings each one requires."
   ],
   [
+   "Can a steel building combine retail space and a warehouse?",
+   "Yes. A steel building can have a customer-facing sales floor or showroom alongside a separate warehouse or storage area. Storefront openings, access doors, insulation, and interior partitions are planned around your use and the applicable codes."
+  ],
+  [
    "Can a flex building be insulated?",
    "Yes. We supply insulation. Tell us how you will use the space and we will include insulation options in your quote."
   ],
   [
    "Can a flex building have more than one tenant?",
-   "Buildings can be laid out with multiple bays or suites. Zoning and code requirements for multi-tenant use vary by location, so check with your local building department."
+   "Potentially, yes. A building can be planned as separate suites, each with its own entrance and possibly its own overhead door. The design has to account for tenant separation, fire protection, exits, utilities, and parking, and requirements vary by location, so check with your local building department."
   ],
   [
    "Are flex buildings used as investment properties?",
    "Flex buildings have become a popular model for investors who build to lease to tenants, similar to storage units. Zoning and leasing requirements vary by location."
+  ],
+  [
+   "How much does a flex steel building cost?",
+   "Cost depends on the size, site, engineering, insulation, doors and windows, and the level of interior finish. Share your location, intended use, and approximate dimensions and we will provide a custom quote."
   ],
   [
    "How long does it take to get a flex building?",
