@@ -27,11 +27,12 @@ Office + Warehouse | Showroom + Storage | Contractor Shop + Office | Multi-Tenan
 
 ## SECTION 5: FEATURES AND DESIGN OPTIONS (6 cards)
 Clear-Span Framing | Overhead Doors | Storefront and Entry Options | Flexible Layouts (room to expand later) | Exterior Colors and Trim | Engineered and Permit-Ready.
-- Left out of the brainstorm until you confirm: insulation, office build-out, ACT Building Systems naming. We do not describe insulation or interior finish options unless you say what BSB offers. [CONFIRM what you can supply]
+- UPDATED with owner info: we supply insulation; insulated panels are a popular look and BSB supplies them; parapets and canopies are popular features. Cards: Clear-Span Framing, Insulation Available, Insulated Panels, Parapets and Canopies, Doors Windows and Entries, Flexible Layouts.
+- Still out: office build-out and interior finish claims; vendor naming of the 3D designer.
 - Zoning line under the cards: flex and multi-tenant uses often have specific zoning and code requirements; requirements vary by location.
 
 ## SECTION 6: WHO USES FLEX BUILDINGS? (4 cards)
-Contractors and Trades | Retailers and Showrooms | Dealers and Service Businesses | Distributors and Light Operations.
+Contractors and Trades | Retailers and Showrooms | Dealers, Service, and Distribution | Investors and Developers (build-to-lease; owner says flex buildings have become a business model for investors, similar to storage units).
 - The brainstorm also listed "light manufacturers." Folded into the last card as "light operations" to avoid claiming manufacturing capabilities. [CONFIRM]
 
 ## SECTION 7: HOW YOUR PROJECT WORKS (same 5 steps), then the STANDARD 3D BAND
@@ -40,7 +41,7 @@ Contractors and Trades | Retailers and Showrooms | Dealers and Service Businesse
 ## SECTION 8: PROJECTS  [LATER, only when a real flex-style project exists with photos and sizes]
 
 ## SECTION 9: FAQ (5 questions, plus FAQ markup)
-What is a flex building? | Can I have an office and a warehouse in the same steel building? | Can a flex building have more than one tenant? | Can I add on later? | How long does it take (8 to 10 weeks).
+What is a flex building? | Office and warehouse in one building? | Can it be insulated? (yes, we supply insulation) | More than one tenant? | Used as investment properties? | How long (8 to 10 weeks).
 
 ## SECTION 10: RELATED LINKS and QUOTE BAND
 Also see Commercial and Retail, Shops and Garages, Industrial and Warehouse. Quick Quote form with the Privacy line.
@@ -52,3 +53,8 @@ Also see Commercial and Retail, Shops and Garages, Industrial and Warehouse. Qui
 
 ## STRATEGY CALL
 Lead with the individual business owner who needs office + shop or office + warehouse, with multi-tenant as a secondary application. I agree with that recommendation, and the copy is written that way.
+
+## OWNER DECISIONS (2026-10-09)
+- Flex becomes the #1 card on the Steel Buildings page (11 cards; last row of two stays centered).
+- Hero photo: placeholder IMG_1723 for now; owner is sourcing a hero and 3 more photos.
+- Investor angle added to the intro, one use card, and an FAQ, using hedged wording from the owner's statement.

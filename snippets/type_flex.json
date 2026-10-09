@@ -25,7 +25,7 @@
   ]
  ],
  "intro_h2": "What Is a Flex Building?",
- "intro_p": "A flex building combines complementary uses under one roof, such as an office or showroom at the front and a warehouse or shop at the back. One building, one site, and a layout built around how your business actually works.",
+ "intro_p": "A flex building combines complementary uses under one roof, such as an office or showroom at the front and a warehouse or shop at the back. One building, one site, and a layout built around how your business actually works. Flex buildings are also a popular model for investors who build to lease, similar to storage units.",
  "uses_h2": "Flex Building Configurations",
  "uses_sub": "Pick the combination that fits your business.",
  "uses": [
@@ -59,29 +59,29 @@
    "Fewer interior columns leave open space for work areas, aisles, and inventory."
   ],
   [
-   "fas fa-door-open",
-   "Overhead Doors",
-   "Place overhead and walk doors where your loading and operations need them."
+   "fas fa-temperature-low",
+   "Insulation Available",
+   "We supply insulation. Tell us how you will use the space and we will include options in your quote."
   ],
   [
-   "fas fa-store",
-   "Storefront and Entry Options",
-   "Windows and framed entries for the customer-facing side of the building."
+   "fas fa-layer-group",
+   "Insulated Panels",
+   "A popular choice for flex buildings, giving a clean, finished exterior look."
+  ],
+  [
+   "fas fa-umbrella",
+   "Parapets and Canopies",
+   "Parapets and entry canopies give the front of the building a professional storefront look."
+  ],
+  [
+   "fas fa-door-open",
+   "Doors, Windows, and Entries",
+   "Overhead doors for loading, plus windows and framed entries for customers."
   ],
   [
    "fas fa-sync-alt",
    "Flexible Layouts",
    "Plan office, showroom, and work areas in one footprint, with room to expand later."
-  ],
-  [
-   "fas fa-palette",
-   "Exterior Colors and Trim",
-   "Choose wall and roof colors and trim to match your brand."
-  ],
-  [
-   "fas fa-clipboard-check",
-   "Engineered and Permit-Ready",
-   "Designed for local loads, with engineered plans prepared for permitting."
   ]
  ],
  "codes_line": "Flex and multi-tenant buildings often have specific zoning and code requirements. We design to your local requirements, and requirements vary by location.",
@@ -100,13 +100,13 @@
   ],
   [
    "fas fa-truck-pickup",
-   "Dealers and Service Businesses",
-   "Sales, service bays, and parts storage in one building."
+   "Dealers, Service, and Distribution",
+   "Sales, service bays, parts, and storage in one building."
   ],
   [
-   "fas fa-boxes",
-   "Distributors and Light Operations",
-   "Office space plus storage and light operations."
+   "fas fa-building",
+   "Investors and Developers",
+   "Build-to-lease flex buildings, a popular model similar to storage units."
   ]
  ],
  "look_line": "Not sure which layout fits? Tell us how you work and we will help you plan it.",
@@ -122,12 +122,16 @@
    "Yes. We design the building around the office, work, and storage areas you need and the doors and openings each one requires."
   ],
   [
+   "Can a flex building be insulated?",
+   "Yes. We supply insulation. Tell us how you will use the space and we will include insulation options in your quote."
+  ],
+  [
    "Can a flex building have more than one tenant?",
    "Buildings can be laid out with multiple bays or suites. Zoning and code requirements for multi-tenant use vary by location, so check with your local building department."
   ],
   [
-   "Can I add on to the building later?",
-   "Steel buildings can often be designed so they can be expanded later. Tell us your future plans so the design allows for it."
+   "Are flex buildings used as investment properties?",
+   "Flex buildings have become a popular model for investors who build to lease to tenants, similar to storage units. Zoning and leasing requirements vary by location."
   ],
   [
    "How long does it take to get a flex building?",
