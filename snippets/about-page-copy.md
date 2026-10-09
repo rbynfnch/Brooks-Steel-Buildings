@@ -28,7 +28,7 @@ Accuracy rules apply: no manufacturer names or hints, no hours, no email, no tes
 - Paragraph 1:
   Brooks Steel Buildings supplies custom pre-engineered steel buildings for commercial, agricultural, equestrian, shop, and residential use. Every building is designed around your site, your use, and your budget.
 - Paragraph 2:
-  The company is owned and operated by Brooks Walk, who has spent more than 30 years in the steel building industry. [CONFIRM: keep the owner's name public?]
+  The company is owned and operated by Brooks Walk, who has spent more than 30 years in the steel building industry.
 - Paragraph 3:
   That experience helps guide you through each step, from design and engineering plans to delivery and construction.
 - Photo: [NEEDED] a photo of the owner, the yard, or a finished project. Alt text: "Brooks Steel Buildings, Evanston, Wyoming"
@@ -42,7 +42,7 @@ Accuracy rules apply: no manufacturer names or hints, no hours, no email, no tes
 - Card 1, Custom Designed: Your building is designed for how you will use it, whether that is commercial, agricultural, equestrian, or residential.
 - Card 2, Built for Snow and Wind: We design for the snow loads, wind, and temperature swings common across Wyoming, Utah, and Idaho.
 - Card 3, Faster Construction: Steel buildings go up faster than many traditional methods, which can reduce labor time and delays.
-- Card 4, Open Interiors: Clear-span designs are available for open space with no interior support columns. [CONFIRM: available on all building types?]
+- Card 4, Open Interiors: Clear-span designs are available for open space with no interior support columns.
 - Card 5, Regional Know-How: We know the codes and conditions in the three states we serve.
 - Card 6, Permitting Support: Buildings are designed with local codes and structural requirements in mind, and engineered plans are prepared for permitting. Requirements vary by location.
 - Button (blue outline): Design Your Building in 3D   -> existing 3D designer link
