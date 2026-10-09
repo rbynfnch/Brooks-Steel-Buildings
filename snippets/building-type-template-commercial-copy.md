@@ -108,7 +108,12 @@ Rule: every claim on a type page should map to one of these, to owner knowledge,
 - SteelConstruction.info, Retail Buildings: prefabrication and rapid installation can shorten schedules; large spans for flexible sales floors; earlier completion helps owners open sooner; lighter systems can reduce foundation loads versus some alternatives.
 - AISI, Sustainability: steel is durable and versatile; recyclable repeatedly without losing basic properties.
 Notes:
-- I have used your summaries of these sources. I have not opened the pages myself, so please confirm the exact URLs before we link to any of them.
+- Source URLs (from owner), NOT yet verified by me; my environment cannot reach these hosts (network policy blocks them):
+  - AISC: https://www.aisc.org/architecture-center/resources/the-steel-advantage/
+  - MBMA: https://mbma.com/gallery/retail
+  - SteelConstruction.info: https://steelconstruction.info/sectors/retail-buildings/ (UK-based; treat its points as general, not US code claims)
+  - AISI: https://www.steel.org/Sustainability/
+  Before publishing any claim, the owner (or I, once those hosts are allowed) should read the exact sentence on the page. The MBMA retail page is a project gallery, so it may not state the durability or energy-code points; do not rely on it for those.
 - Optional "Industry references" line under the FAQ, small text: "Learn more: AISC, MBMA, SteelConstruction.info, AISI," as links that open in a new tab. It adds trust and gives AI tools a citation trail, but it sends visitors off the site. Recommendation: plain-text attributions in the copy for now, add links later if you want them.
 - MBMA is a trade association, not a manufacturer name, and Home already mentions it. Keep any MBMA reference general and do not imply BSB is endorsed by it.
 - Energy-code wording: say "designed to meet your local energy code" only if the project specs support it. Not on the draft.
