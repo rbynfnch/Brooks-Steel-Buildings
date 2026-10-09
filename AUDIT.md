@@ -261,3 +261,4 @@ Also: no hours, no contact email, no testimonials (none yet), do not list certif
 - 2026-10-09: Agricultural draft copy + spec ready (snippets/agricultural-page-copy.md, snippets/type_agricultural.json). Not yet created on site. Owner answers: snow wording, 'older pole barns', all ag types supplied, 4 ft stemwall for feed, photos coming. Hay barn sizes/eaves from ChatGPT brainstorm held back pending confirmation.
 - 2026-10-09: Agricultural copy updated after competitor review (hedged hay protection, 3D designer in intro, careful livestock/steel claims). Still draft, awaiting owner answers (sizes, title length, grain/cold/poultry wording, hay barns page).
 - Agricultural spec: stemwall 4 to 8 ft, storage-types FAQ added, Hay Barns page idea saved (no site changes yet).
+- Agricultural: poultry/dairy dropped from FAQ (low SEO value); grain/crop/produce FAQ kept.

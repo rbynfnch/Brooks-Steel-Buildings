@@ -17,7 +17,7 @@ Owner decisions applied: snow wording "engineered for heavy snow loads common in
 6. "Built for Heavy Snow Country" 4 cards: Engineered for Snow Loads; Upgrading Older Pole Barns; Strength Without Interior Posts; Easy to Expand. Line: requirements are set by your local building department.
 7. PHOTO STRIP (3 photos) once you send them. Alt text should describe the real photo.
 8. How Your Project Works (5 steps) and the standard 3D band.
-9. FAQ (9, incl. grain/produce/poultry/dairy shell with cautions): hay barn size; open sides; feed against the wall (stemwall); heavy snow; replacing a pole barn; build it myself; add lean-tos later; timeline.
+9. FAQ (9, incl. grain/crop/produce shell with cautions): hay barn size; open sides; feed against the wall (stemwall); heavy snow; replacing a pole barn; build it myself; add lean-tos later; timeline.
 10. Related links: Equestrian Riding Arenas, Shops and Garages, Star Valley page. Quote band with Privacy line.
 
 ## What I kept out and why
@@ -46,4 +46,4 @@ Not copied: competitor project sizes (65x100, 83x160) and any claim of services 
 - No Brooks hay barn size list. AEO answer instead explains sizing depends on bale type, stack height, and loader room (already in FAQ).
 - Title stays "Agricultural Steel Buildings & Hay Barns | Brooks Steel Buildings"; recheck query data in Search Console after indexing.
 - Saved idea: dedicated Hay Barns page (/steel-buildings/hay-barns/), plus Equipment Storage page.
-- Grain/cold-produce/poultry/dairy: handled as one cautious FAQ (structural shell; specialized design required); no claims of complete facilities.
+- Grain/crop/produce handled as one cautious FAQ (shell only; specialized design). Poultry and dairy dropped: low SEO value for this market, owner only wants them with key SEO value.
