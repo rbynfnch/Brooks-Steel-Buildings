@@ -29,3 +29,14 @@ Owner decisions applied: snow wording "engineered for heavy snow loads common in
 
 ## Bigger SEO opportunity (optional, later)
 A dedicated Hay Barns page (/steel-buildings/hay-barns/) could rank for "steel hay barn" and "hay shed" searches, with the Agricultural page as the parent. Same template. Worth doing once you have a few real hay barn photos and the sizes you quote.
+
+## COMPETITOR REVIEW (owner-supplied ChatGPT analysis, 2026-10-09; I could not open competitor sites to verify)
+Takeaway: competitors sell how the building helps the farm operate (protect equipment, store hay dry, fit bigger machinery, plan for the future), not the steel itself. Our draft already leads with use cases and layouts.
+Applied to the spec:
+- Outcome wording on the hay card ("help protect hay from wind and wet weather"), no promise that open sides prevent spoilage.
+- 3D designer promoted in the intro ("explore dimensions, rooflines, colors, and openings before you call"), plus the standard 3D band.
+- Livestock kept careful: "planned around your animals, your site, and how you use the space," with no ventilation or housing claims.
+- Steel claim limited to "does not rot"; no claims that steel prevents condensation, rust, or maintenance.
+Photo guidance: show a tractor or loader inside next to stacked hay so clearance and access are obvious (real BSB photos only).
+Page structure idea from the review: separate landing pages by job (Hay Storage, Equipment Storage, Ag Shops, Livestock). My order: build Hay Barns first, then Equipment Storage; fold shops and livestock into this page unless you get real project photos. Avoid thin duplicate pages.
+Not copied: competitor project sizes (65x100, 83x160) and any claim of services BSB does not provide (site work, construction).
