@@ -1,7 +1,7 @@
 {
  "draft_title": "Steel Flex Buildings (rebuild)",
  "live_title": "Steel Flex Buildings",
- "hero_image_url": "https://brookssteelbuildings.com/wp-content/uploads/2020/11/IMG_1723-scaled.jpg",
+ "hero_image_url": "https://brookssteelbuildings.com/wp-content/uploads/2026/10/Flex-Building-Industrial-Warehouses.png",
  "crumb": "Steel Flex Buildings",
  "eyebrow": "STEEL FLEX BUILDINGS",
  "h1": "Steel Flex Buildings for Businesses in Wyoming, Utah &amp; Idaho",
@@ -30,7 +30,7 @@
  "uses_sub": "Typical layouts include a finished entrance and offices up front, a showroom or sales area, and an open shop or warehouse behind, with overhead doors for vehicles and deliveries. These are design options, and what fits depends on your use, zoning, and code.",
  "uses": [
   [
-   "far fa-building",
+   "fas fa-warehouse",
    "Office + Warehouse",
    "Customer-facing office space with storage or operations behind it."
   ],
@@ -110,7 +110,20 @@
   ]
  ],
  "look_line": "Not sure which layout fits? Tell us how you work and we will help you plan it.",
- "photos": [],
+ "photos": [
+  [
+   "https://brookssteelbuildings.com/wp-content/uploads/2026/10/Flex-Steel-Building-Warehouse.png",
+   "Steel flex building with warehouse space"
+  ],
+  [
+   "https://brookssteelbuildings.com/wp-content/uploads/2026/10/Flex-building-Retail-Strip.png",
+   "Steel flex building retail strip"
+  ],
+  [
+   "https://brookssteelbuildings.com/wp-content/uploads/2026/10/Flex-Building.png",
+   "Steel flex building"
+  ]
+ ],
  "faq_h2": "Steel Flex Building Questions",
  "faq": [
   [

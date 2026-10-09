@@ -13,16 +13,18 @@ css+="""
 @media(max-width:900px){.about-cards.four{grid-template-columns:repeat(2,1fr)}.about-cards.six{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.about-cards.four,.about-cards.six{grid-template-columns:1fr}}
 .hero-bg.type-hero{background-image:linear-gradient(rgba(20,30,45,.62),rgba(20,30,45,.62)),url(%s) !important}
+.about-steps i{display:block;font-size:26px;color:#1a3153;margin-bottom:8px}
 .type-crumbs,.type-crumbs a{font-size:13px;color:#dfe6f1 !important}
 .type-related{text-align:center;color:#444b55}
 .type-related a{margin:0 10px;font-weight:700}
 #main:has(.type-hero),#content:has(.type-hero){padding-top:0 !important;padding-bottom:0 !important;margin-top:0 !important;margin-bottom:0 !important}"""%spec['hero_image_url']
 style=enc('<style>'+''.join(l.strip() for l in css.split('\n'))+'</style>')
 def H(t,sub=''): return f"[ultimate_heading main_heading=\"{t}\" main_heading_style=\"font-weight:bold;\" sub_heading_font_size=\"desktop:18px;\" main_heading_margin=\"margin-bottom:10px;\"]{sub}[/ultimate_heading]"
-def card(i,t,p): return f'<div class="about-card"><i class="{i}"></i><h3>{t}</h3><p>{p}</p></div>'
+def card(i,t,p): return f'<div class="about-card"><i class="{i}" aria-hidden="true">&#8203;</i><h3>{t}</h3><p>{p}</p></div>'
 uses=''.join(card(*u) for u in spec['uses'])
 why=''.join(card(*u) for u in spec['why'])
-steps=''.join(f'<div><b>{i+1}. {t}</b><span>{d}</span></div>' for i,(t,d) in enumerate([('Design','We talk through your needs, site, and budget and plan the right building.'),('Engineering','Your building is engineered for local codes, with plans prepared for permitting.'),('Preparation','Your building package is prepared for accurate, efficient assembly.'),('Delivery','Your building package is delivered to your job site.'),('Construction','Build it yourself or hire a contractor.')]))
+STEP_ICONS=['fa-comments','fa-drafting-compass','fa-clipboard-check','fa-truck','fa-hard-hat']
+steps=''.join(f'<div><i class="fas {STEP_ICONS[i]}" aria-hidden="true">&#8203;</i><b>{i+1}. {t}</b><span>{d}</span></div>' for i,(t,d) in enumerate([('Design','We talk through your needs, site, and budget and plan the right building.'),('Engineering','Your building is engineered for local codes, with plans prepared for permitting.'),('Preparation','Your building package is prepared for accurate, efficient assembly.'),('Delivery','Your building package is delivered to your job site.'),('Construction','Build it yourself or hire a contractor.')]))
 faq=spec['faq']
 toggles=''.join(f'[vc_toggle title="{q}"]{a}[/vc_toggle]' for q,a in faq)
 ld={"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in faq]}
