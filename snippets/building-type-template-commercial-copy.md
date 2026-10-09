@@ -35,16 +35,18 @@ This page doubles as the TEMPLATE for the other building types. Anything marked 
   [CONFIRM list; the current page also mentions mini storage, which now has its own page]
 
 ---------------------------------------------------------------
-## SECTION 3: WHY STEEL FOR THIS TYPE (4 to 6 benefit cards, white)
+## SECTION 3: WHY STEEL FOR THIS TYPE (6 benefit cards, white)
 ---------------------------------------------------------------
 - H2: {SWAP} Why Businesses Choose Steel
-- Clear-span interiors: Open floor space with no interior columns, so you can lay out and reconfigure your operation.
-- Higher eave heights: Room for tall racking, equipment, and taller interiors.
-- Faster construction: Steel buildings go up faster than many traditional methods, which can reduce labor time and delays.
-- Strength and durability: Steel resists corrosion and holds up in harsh weather, with low maintenance.
-- Attractive and customizable: Choose wall and roof colors, doors, windows, and trim to match your brand.
-- Designed to local requirements: Commercial sites often have zoning and height limits. We design to your local codes and prepare engineered plans for permitting. Requirements vary by location.
-- Removed from the current page: "71% of low-rise commercial construction relies on steel" and "30 to 50 percent faster at a fraction of the cost." We cannot source or back up those figures. Add them back only with a cited source.
+- Clear-span interiors [AISC, MBMA, SteelConstruction.info]: Longer spans mean fewer interior columns and more usable floor space for your layout.
+- Flexible and adaptable [AISC, MBMA]: Open interiors can be reconfigured for changing uses, and steel buildings can often be expanded later.
+- Faster construction [AISC, SteelConstruction.info]: Components are prepared ahead of time and go up quickly, which can shorten the schedule and help you open sooner.
+- Durable and low maintenance [MBMA, AISI]: Steel is built to resist weather and environmental loads, and holds up over time.
+- Attractive and customizable: Choose wall and roof colors, doors, windows, and trim to match your brand. [owner knowledge]
+- Recyclable material [AISI]: Steel can be recycled repeatedly without losing its basic properties, which supports sustainability goals.
+- Designed to local requirements: Commercial sites often have zoning and height limits. We design to your local codes and prepare engineered plans for permitting. Requirements vary by location. [owner knowledge]
+- Optional card: Lighter framing can mean lighter foundation loads compared with some alternatives [SteelConstruction.info]. [CONFIRM: depends on the project, so keep it hedged or leave out]
+- Removed from the current page: "71% of low-rise commercial construction relies on steel" and "30 to 50 percent faster at a fraction of the cost." They have no cited source in the list you gave, so they stay out unless one of the sources states them. No percentages anywhere unless we can point to the exact page.
 
 ---------------------------------------------------------------
 ## SECTION 4: HOW YOUR PROJECT WORKS (5 steps, same as About page)
@@ -96,3 +98,17 @@ Same as every page.
 - Use "metal buildings" once or twice naturally. Never list the keyword.
 - Only facts you can back up. No manufacturer names. Same 8 to 10 week wording.
 - Link back to /steel-buildings/ and to 2 to 3 related types.
+
+---------------------------------------------------------------
+## CLAIMS AND SOURCES (internal, not on the page)
+---------------------------------------------------------------
+Rule: every claim on a type page should map to one of these, to owner knowledge, or be removed. Use general wording, no numbers, and "can" or "often" where the source says "some" or "can".
+- AISC, The Steel Advantage: longer spans and fewer interior columns, more usable space; adaptable and expandable; off-site fabrication can streamline construction.
+- MBMA (Retail Gallery, Resilient by Design): open adaptable retail spaces; efficient production and erection; durability and resistance to environmental loads; energy-code compliance through appropriate design and components.
+- SteelConstruction.info, Retail Buildings: prefabrication and rapid installation can shorten schedules; large spans for flexible sales floors; earlier completion helps owners open sooner; lighter systems can reduce foundation loads versus some alternatives.
+- AISI, Sustainability: steel is durable and versatile; recyclable repeatedly without losing basic properties.
+Notes:
+- I have used your summaries of these sources. I have not opened the pages myself, so please confirm the exact URLs before we link to any of them.
+- Optional "Industry references" line under the FAQ, small text: "Learn more: AISC, MBMA, SteelConstruction.info, AISI," as links that open in a new tab. It adds trust and gives AI tools a citation trail, but it sends visitors off the site. Recommendation: plain-text attributions in the copy for now, add links later if you want them.
+- MBMA is a trade association, not a manufacturer name, and Home already mentions it. Keep any MBMA reference general and do not imply BSB is endorsed by it.
+- Energy-code wording: say "designed to meet your local energy code" only if the project specs support it. Not on the draft.
