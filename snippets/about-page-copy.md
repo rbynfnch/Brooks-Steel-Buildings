@@ -53,7 +53,7 @@ Accuracy rules apply: no manufacturer names or hints, no hours, no email, no tes
 - H2: Serving Wyoming, Utah & Idaho
 - Intro: From small towns to growing cities, we supply steel buildings engineered for local snow loads, wind, and building conditions.
 - Column "Wyoming": Evanston, Rock Springs, Pinedale, Afton, Star Valley, Lyman, Jackson   (link Wyoming Steel Buildings page)
-- Column "Utah": Salt Lake, Ogden, Provo / Orem, Spanish Fork, Payson, Mapleton, Heber, Coleville, St. George   (link Utah Steel Buildings page)
+- Column "Utah": Salt Lake, Ogden, Provo / Orem, Spanish Fork, Payson, Mapleton, Heber, Coalville, St. George   (link Utah Steel Buildings page)
 - Column "Idaho": Idaho Falls, Rexburg, Driggs, Swan Valley, Pocatello, Preston, Montpelier
 - Link under columns: See Wyoming | See Utah   (Idaho page not built yet)
 
