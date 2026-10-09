@@ -262,3 +262,4 @@ Also: no hours, no contact email, no testimonials (none yet), do not list certif
 - 2026-10-09: Agricultural copy updated after competitor review (hedged hay protection, 3D designer in intro, careful livestock/steel claims). Still draft, awaiting owner answers (sizes, title length, grain/cold/poultry wording, hay barns page).
 - Agricultural spec: stemwall 4 to 8 ft, storage-types FAQ added, Hay Barns page idea saved (no site changes yet).
 - Agricultural: poultry/dairy dropped from FAQ (low SEO value); grain/crop/produce FAQ kept.
+- Agricultural draft created: page 2614 (draft, title 'Agricultural Steel Buildings (rebuild)'), preview https://brookssteelbuildings.com/?page_id=2614&preview=true. Pending: meta (_dt_sidebar_position/_dt_header_title disabled), Yoast, then PUT into live 2203 on approval.
