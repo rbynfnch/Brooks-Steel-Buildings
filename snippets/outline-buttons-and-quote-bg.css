@@ -8,3 +8,12 @@ a.dt-btn:not(.btn-orange):not(.btn-outline-white):not(.btn-orange *):not(.btn-ou
 .quote-section{background:#1a3153 !important;box-shadow:0 0 0 100vmax #1a3153;clip-path:inset(0 -100vmax);}
 .quote-section h2,.quote-section .uvc-sub-heading,.quote-section .gfield_label,.quote-section p,.quote-section p a{color:#ffffff !important;}
 .quote-section .gform-field-label--type-sub,.quote-section .gfield_required{color:#dfe6f1 !important;}
+/* Quick Quote form (id 2): aligned fields, no sublabels, white outline submit */
+#gform_wrapper_2 .ginput_container_address{display:flex !important;flex-wrap:nowrap;gap:14px;align-items:flex-start;}
+#gform_wrapper_2 .ginput_container_address span{float:none !important;display:block !important;flex:1 1 0;width:auto !important;margin:0 !important;padding:0 !important;}
+#gform_wrapper_2 .gform-field-label--type-sub{display:none !important;}
+#gform_wrapper_2 input[type=text],#gform_wrapper_2 input[type=tel],#gform_wrapper_2 input[type=email],#gform_wrapper_2 select{height:44px !important;margin:0 !important;box-sizing:border-box;width:100% !important;}
+#gform_wrapper_2 textarea{margin:0 !important;box-sizing:border-box;width:100% !important;}
+#gform_wrapper_2 ul.gform_fields{align-items:flex-start !important;}
+#gform_wrapper_2 .gform_button,#gform_wrapper_2 input[type=submit]{background:transparent !important;background-image:none !important;box-shadow:inset 0 0 0 2px #ffffff !important;border:0 !important;color:#ffffff !important;}
+#gform_wrapper_2 .gform_button:hover,#gform_wrapper_2 input[type=submit]:hover{background:#ffffff !important;color:#1a3153 !important;}
