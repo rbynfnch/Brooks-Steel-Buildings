@@ -50,41 +50,6 @@
    "Machine shops, work bays, and general farm and ranch storage."
   ]
  ],
- "why_h2": "Hay Barns: Designed Around Your Bales",
- "why_sub": "Start with how you stack, load, and unload hay, then size the building around it.",
- "why": [
-  [
-   "fas fa-door-open",
-   "Open-Front Access",
-   "A wide, tall opening sized for your tractor, loader, and loaded bales."
-  ],
-  [
-   "fas fa-border-style",
-   "Partial or Full Sidewalls",
-   "Wall panels on the lower sides, or full sidewalls, to shield hay from wind and wet weather."
-  ],
-  [
-   "fas fa-columns",
-   "Solid Back Wall",
-   "Protection on the most exposed side, with the building oriented to your site."
-  ],
-  [
-   "fas fa-expand-arrows-alt",
-   "Clear-Span Interior",
-   "No interior columns, so bales, equipment, and loaders move freely."
-  ],
-  [
-   "fas fa-layer-group",
-   "Stemwall Option",
-   "Design around a stemwall, commonly 4 to 8 feet high, so feed can be stored against the wall."
-  ],
-  [
-   "fas fa-exchange-alt",
-   "Drive-Through Option",
-   "An open second end can make loading and unloading easier on some sites."
-  ]
- ],
- "codes_line": "If bales or feed will be stacked against a wall, tell us. The wall has to be designed for that load. Capacity depends on bale type, stack height, and the room you need to maneuver.",
  "look_h2": "Built for Heavy Snow Country",
  "look_sub": "Engineered for heavy snow loads common in mountain valleys like Star Valley.",
  "look": [
@@ -110,7 +75,20 @@
   ]
  ],
  "look_line": "Snow-load requirements vary by location and are set by your local building department. Tell us your site and we will design to it.",
- "photos": [],
+ "photos": [
+  [
+   "https://placehold.co/800x600/1a3153/ffffff?text=Photo+coming+soon",
+   "Agricultural steel building on a farm or ranch"
+  ],
+  [
+   "https://placehold.co/800x600/1a3153/ffffff?text=Photo+coming+soon",
+   "Steel equipment storage building on a ranch"
+  ],
+  [
+   "https://placehold.co/800x600/1a3153/ffffff?text=Photo+coming+soon",
+   "Steel livestock or hay shelter building"
+  ]
+ ],
  "faq_h2": "Agricultural Steel Building Questions",
  "faq": [
   [
@@ -163,5 +141,8 @@
    "Star Valley, Wyoming",
    "/star-valley-wyoming-steel-buildings/"
   ]
- ]
+ ],
+ "photo_row": true,
+ "photo_h2": "Agricultural Steel Buildings in the Field",
+ "photo_sub": "Photos of steel buildings on farms and ranches."
 }
