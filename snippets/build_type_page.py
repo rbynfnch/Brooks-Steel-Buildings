@@ -13,6 +13,7 @@ css+="""
 @media(max-width:900px){.about-cards.four{grid-template-columns:repeat(2,1fr)}.about-cards.six{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.about-cards.four,.about-cards.six{grid-template-columns:1fr}}
 .hero-bg.type-hero{background-image:linear-gradient(rgba(20,30,45,.62),rgba(20,30,45,.62)),url(%s) !important}
+.about-card h3{line-height:1.25 !important}
 .about-steps i{display:block;font-size:26px;color:#1a3153;margin-bottom:8px}
 .type-crumbs,.type-crumbs a{font-size:13px;color:#dfe6f1 !important}
 .type-related{text-align:center;color:#444b55}
