@@ -33,7 +33,7 @@
  ],
  "draft_title": "Industrial and Warehouse Steel Buildings (rebuild)",
  "live_title": "Industrial and Warehouse Steel Buildings",
- "hero_image_url": "https://brookssteelbuildings.com/wp-content/uploads/2026/10/Flex-Steel-Building-Warehouse.png",
+ "hero_image_url": "https://brookssteelbuildings.com/wp-content/uploads/2026/10/Warehouse-Logistics-Center.png",
  "crumb": "Industrial and Warehouse",
  "eyebrow": "INDUSTRIAL AND WAREHOUSE STEEL BUILDINGS",
  "h1": "Industrial and Warehouse Steel Buildings in Wyoming, Utah &amp; Idaho",
@@ -139,7 +139,16 @@
   ]
  ],
  "look_line": "Crane capacity, span, hook height, and how often it runs all affect the design. Your crane supplier provides the loads, and we design the building to them.",
- "photos": [],
+ "photos": [
+  [
+   "https://brookssteelbuildings.com/wp-content/uploads/2026/10/Steel-Factory-Overhead-Cranes.png",
+   "Industrial steel building with overhead cranes"
+  ],
+  [
+   "https://brookssteelbuildings.com/wp-content/uploads/2026/10/Warehouse-Loading-Dock.png",
+   "Steel warehouse building with loading dock"
+  ]
+ ],
  "faq_h2": "Industrial and Warehouse Steel Building Questions",
  "faq": [
   [
@@ -178,5 +187,8 @@
    "How long does it take to get an industrial steel building?",
    "Our current turnaround is 8 to 10 weeks. Timelines can vary with project size, options, and demand."
   ]
- ]
+ ],
+ "photo_row": true,
+ "photo_h2": "Industrial and Warehouse Steel Buildings",
+ "photo_sub": "Illustrative images of crane buildings and loading docks."
 }
