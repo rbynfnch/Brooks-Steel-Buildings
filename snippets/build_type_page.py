@@ -55,6 +55,11 @@ c=(f'[vc_row el_class="hero-bg type-hero" full_width="stretch_row"][vc_column][v
  f'{d3}'
  f'[vc_row][vc_column][vc_empty_space height="40px"]{H(spec["faq_h2"])}[vc_empty_space height="20px"]{toggles}[vc_raw_html]{schema}[/vc_raw_html][vc_empty_space height="30px"][vc_column_text]<p class="type-related">Also see: {related} | <a href="/steel-buildings/">All steel building types</a></p>[/vc_column_text][vc_empty_space height="40px"][/vc_column][/vc_row]'
  f'[vc_row el_class="about-quote" full_width="stretch_row"][vc_column][vc_empty_space height="40px"]{H("Get Your Free Quote","Tell us about your project and we will provide a custom quote based on your needs.")}[vc_empty_space height="20px"][vc_raw_html]{style}[/vc_raw_html][gravityform id=\'2\' title=\'false\' description=\'false\' ajax=\'true\'][vc_column_text]<p style="text-align:center;">Prefer to talk? Call <a href="tel:8009084839">800-908-4839</a>.<br><small>By submitting this form, you agree to our <a href="/privacy-policy/">Privacy Policy</a>.</small></p>[/vc_column_text][vc_empty_space height="40px"][/vc_column][/vc_row]')
+if spec.get('photo_row'):
+    ALT='[vc_row el_class="about-alt" full_width="stretch_row"]'
+    c=c.replace('[vc_row][vc_column][vc_empty_space height="40px"][ultimate_heading main_heading="'+spec['why_h2']+'"',ALT+'[vc_column][vc_empty_space height="40px"][ultimate_heading main_heading="'+spec['why_h2']+'"',1) if spec.get('why_h2') else c
+    c=c.replace(ALT+'[vc_column][vc_empty_space height="40px"][ultimate_heading main_heading="'+spec['look_h2']+'"','[vc_row][vc_column][vc_empty_space height="40px"][ultimate_heading main_heading="'+spec['look_h2']+'"',1)
+    c=c.replace('[vc_row full_width="stretch_row"][vc_column][vc_empty_space height="40px"][ultimate_heading main_heading="How Your Project Works"',ALT+'[vc_column][vc_empty_space height="40px"][ultimate_heading main_heading="How Your Project Works"',1)
 json.dump({"title":spec["draft_title"],"status":"draft","content":c},open(out+'/type_create.json','w'))
 json.dump({"title":spec["live_title"],"content":c},open(out+'/type_publish.json','w'))
 print(len(c))
