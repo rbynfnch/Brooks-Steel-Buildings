@@ -19,6 +19,7 @@ css+="""
 .type-related{text-align:center;color:#444b55}
 .type-related a{margin:0 10px;font-weight:700}
 #main:has(.type-hero),#content:has(.type-hero){padding-top:0 !important;padding-bottom:0 !important;margin-top:0 !important;margin-bottom:0 !important}"""%spec['hero_image_url']
+if spec.get('hero_pos'): css+='\n.hero-bg.type-hero{background-position:center %s !important}'%spec['hero_pos']
 style=enc('<style>'+''.join(l.strip() for l in css.split('\n'))+'</style>')
 def H(t,sub=''): return f"[ultimate_heading main_heading=\"{t}\" main_heading_style=\"font-weight:bold;\" sub_heading_font_size=\"desktop:18px;\" main_heading_margin=\"margin-bottom:10px;\"]{sub}[/ultimate_heading]"
 def card(i,t,p): return f'<div class="about-card"><i class="{i}" aria-hidden="true">&#8203;</i><h3>{t}</h3><p>{p}</p></div>'
