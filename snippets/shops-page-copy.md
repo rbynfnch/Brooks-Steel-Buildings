@@ -6,7 +6,7 @@ Lane: personal and small-business garages/shops. Larger commercial -> Commercial
 Dropped from the old page (unsourced or overclaiming): "save one-third on construction time"; protection from "termites, rust, earthquakes, mold"; "in-law apartments" (living space is a zoning/code question, goes to a Barndominiums page).
 Kept/rewritten: personal uses list (workshops, boat/RV/vehicle storage, classic cars, man caves/she sheds -> softened to hobby spaces, home business, home gym), column-free interiors, taller walls, DIY assembly.
 ## To confirm
-- Do you supply overhead doors, walk doors, windows? (copy only says openings are planned for them; no supply claim)
+- RESOLVED by owner: BSB never supplies overhead doors or windows; BSB supplies commercial walk doors (man doors) only. Copy updated (door card + FAQ). Industrial and Flex pages should say the same where doors are mentioned.
 - Photos: hero is a placeholder (shop-house photo 2291). Need 3 photos for a photo row.
 - RESOLVED: owner wants searched terms, not "hobby and lifestyle": card is now "Man Caves and She Sheds" + FAQ "Can I build a man cave or she shed with a steel building?"; "metal shop" added to the intro for synonym coverage.
 - Any wall/roof options to feature (wainscot, liner panels, translucent panels, wide-span widths)?
