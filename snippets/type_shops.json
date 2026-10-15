@@ -110,7 +110,20 @@
   ]
  ],
  "look_line": "Not sure what size you need? Tell us what you will store or build and we will help you plan it.",
- "photos": [],
+ "photos": [
+  [
+   "https://placehold.co/800x600/1a3153/ffffff?text=Photo+coming+soon",
+   "Steel garage or shop building"
+  ],
+  [
+   "https://placehold.co/800x600/1a3153/ffffff?text=Photo+coming+soon",
+   "Steel RV or boat storage building"
+  ],
+  [
+   "https://placehold.co/800x600/1a3153/ffffff?text=Photo+coming+soon",
+   "Steel workshop building interior or exterior"
+  ]
+ ],
  "faq_h2": "Steel Garage and Shop Questions",
  "faq": [
   [
@@ -167,5 +180,8 @@
    "Agricultural Steel Buildings",
    "/steel-buildings/agricultural-steel-buildings/"
   ]
- ]
+ ],
+ "photo_row": true,
+ "photo_h2": "Steel Garages and Shops",
+ "photo_sub": "Garages and shops built around what you store and build."
 }
