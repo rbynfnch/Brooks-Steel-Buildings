@@ -5,6 +5,7 @@ Focus keyword: industrial steel buildings (also: warehouse steel buildings, stee
 Owner facts used: buildings designed to the customer's crane loads; no overhead or dock doors supplied, buildings are designed for them and a door installer installs them; canopies and insulation supplied; lean-tos/add-ons can be planned.
 Layout: hero + facts, intro, 4 use cards, 6 feature cards, 4 crane-type cards, 8 FAQ (with schema), related (Flex, Commercial, Shops), 3D band, quote form.
 Lane vs other pages: Commercial = retail/offices/general warehouses; Flex = office + warehouse; this page = large-span heavy-use, cranes, fabrication.
+## Confirmed by owner: cranes are supplied by others; crane list approved; feature list approved (all 8 added: mezzanine, daylight/ventilation, liner/wainscot, rooftop/solar/sprinkler loads in codes line + FAQ, heavy-duty doors, expandable end walls).
 ## To confirm before publishing
 - Cranes themselves are supplied and installed by others (copy says the crane supplier provides loads; no claim that BSB supplies cranes).
 - Crane types listed: top-running bridge, underhung bridge, monorail, jib, gantry/semi-gantry. Remove any you do not design for.

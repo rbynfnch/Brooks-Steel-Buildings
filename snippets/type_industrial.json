@@ -80,7 +80,7 @@
   [
    "fas fa-door-open",
    "Door Openings and Dock Areas",
-   "We design the building for overhead, roll-up, and dock doors. Doors are installed by a door installer."
+   "We design the building for overhead, roll-up, and dock doors, including heavy-duty and oversized openings. Doors are installed by a door installer."
   ],
   [
    "fas fa-umbrella",
@@ -95,10 +95,25 @@
   [
    "fas fa-plus-square",
    "Room to Expand",
-   "Plan for future bays or lean-tos from the start, or add them later."
+   "Plan for expandable end walls, future bays, or lean-tos from the start, or add them later."
+  ],
+  [
+   "fas fa-layer-group",
+   "Mezzanine Framing",
+   "Interior platforms and mezzanines can be planned into the building design."
+  ],
+  [
+   "fas fa-sun",
+   "Daylight and Ventilation",
+   "Translucent roof or wall panels for daylight, plus ridge vents, louvers, or fans for airflow."
+  ],
+  [
+   "fas fa-border-style",
+   "Liner Panels and Wainscot",
+   "Wall liner panels and wainscot for a cleaner, more durable interior or exterior."
   ]
  ],
- "codes_line": "Crane loads, equipment weights, and storage heights affect both the building frame and the foundation. Share them early so the design starts right.",
+ "codes_line": "Crane loads, equipment weights, storage heights, rooftop equipment or solar, and sprinkler systems all affect the building frame and foundation. Share them early so the design starts right.",
  "look_h2": "Crane Types We Design For",
  "look_sub": "We design the building to your crane loads. Tell us the crane type, capacity, and runway layout.",
  "look": [
@@ -146,6 +161,10 @@
   [
    "How wide and tall can an industrial steel building be?",
    "Clear-span steel buildings can be designed with wide open floors and tall eaves. The practical size depends on your loads, site, and design. Tell us the size and clearances you need and we will plan the building around them."
+  ],
+  [
+   "Can the building be designed for rooftop equipment, solar, or sprinklers?",
+   "Yes. Tell us about rooftop equipment, solar, sprinkler systems, or high-piled storage so the extra loads are included in the design."
   ],
   [
    "Can I add on to the building later?",
