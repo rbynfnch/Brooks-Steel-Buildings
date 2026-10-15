@@ -8,5 +8,5 @@ Kept/rewritten: personal uses list (workshops, boat/RV/vehicle storage, classic 
 ## To confirm
 - Do you supply overhead doors, walk doors, windows? (copy only says openings are planned for them; no supply claim)
 - Photos: hero is a placeholder (shop-house photo 2291). Need 3 photos for a photo row.
-- Tone: keep "man caves and she sheds"? (currently softened to Hobby and Lifestyle Spaces)
+- RESOLVED: owner wants searched terms, not "hobby and lifestyle": card is now "Man Caves and She Sheds" + FAQ "Can I build a man cave or she shed with a steel building?"; "metal shop" added to the intro for synonym coverage.
 - Any wall/roof options to feature (wainscot, liner panels, translucent panels, wide-span widths)?
