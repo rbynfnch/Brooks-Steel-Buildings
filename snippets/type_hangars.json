@@ -19,7 +19,7 @@
  ],
  "draft_title": "Aircraft Hangars (rebuild)",
  "live_title": "Aircraft Hangars",
- "hero_image_url": "https://brookssteelbuildings.com/wp-content/uploads/2026/10/Flex-Steel-Building-Warehouse.png",
+ "hero_image_url": "https://brookssteelbuildings.com/wp-content/uploads/2026/10/hangar-02.png",
  "crumb": "Aircraft Hangars",
  "eyebrow": "AIRCRAFT HANGARS",
  "h1": "Steel Aircraft Hangars in Wyoming, Utah &amp; Idaho",
@@ -110,7 +110,16 @@
   ]
  ],
  "look_line": "Not sure what size you need? Tell us your aircraft and we will help you plan it.",
- "photos": [],
+ "photos": [
+  [
+   "https://brookssteelbuildings.com/wp-content/uploads/2026/10/hangar-04.png",
+   "Concept rendering of a steel aircraft hangar"
+  ],
+  [
+   "https://brookssteelbuildings.com/wp-content/uploads/2026/10/hangar-05.png",
+   "Concept rendering of a steel hangar with large door opening"
+  ]
+ ],
  "faq_h2": "Aircraft Hangar Questions",
  "faq": [
   [
@@ -159,5 +168,8 @@
    "Commercial and Retail",
    "/steel-buildings/commercial/"
   ]
- ]
+ ],
+ "photo_row": true,
+ "photo_h2": "Steel Aircraft Hangars",
+ "photo_sub": "Concept renderings of steel aircraft hangars."
 }
