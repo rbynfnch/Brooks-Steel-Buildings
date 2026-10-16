@@ -1,0 +1,6 @@
+# Recreational (page 1233 /steel-buildings/recreational/) and Schools and Gymnasiums (page 2218 /steel-buildings/schools-and-gymnasiums/): rebuild copy (specs type_recreational.json, type_schools.json)
+Recreational SEO: title 'Steel Recreational Buildings & Gyms | Brooks Steel Buildings'; desc 'Custom steel recreational buildings, gyms, and indoor sports facilities with clear spans and tall eaves in Wyoming, Utah, and Idaho. Free quote.'; kw 'steel recreational buildings'
+Schools SEO: title 'Steel School & Gymnasium Buildings | Brooks Steel Buildings'; desc 'Custom steel buildings for schools, gymnasiums, and churches in Wyoming, Utah, and Idaho. Clear-span, engineered for your site. Free quote.'; kw 'steel school buildings'
+Dropped from old pages (unsourced/overclaiming): corrosion/chemical/'harsh conditions' durability claims, 'safety' claims, hockey and skating rinks, trampoline parks. Kept: gyms, indoor sports, fitness, event centers, churches, work with architect.
+Facts applied: no overhead doors/windows supplied; commercial man doors yes; insulation yes; canopies yes.
+Photos: 3 'Concept image coming soon' placeholders each (placehold.co); hero placeholders reuse Flex images. Swap when owner supplies concept images.
