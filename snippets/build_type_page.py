@@ -45,6 +45,7 @@ if spec.get('photo_row') and imgs:
 lookrow=f'[vc_row el_class="about-alt" full_width="stretch_row"][vc_column][vc_empty_space height="40px"]{H(spec["look_h2"],spec["look_sub"])}[vc_empty_space height="20px"][vc_column_text]<div class="about-cards four">{look}</div><p style="text-align:center;margin-top:24px;">{spec["look_line"]}</p>{photos}[/vc_column_text][vc_empty_space height="40px"][/vc_column][/vc_row]'
 introrow=(f'[vc_row][vc_column][vc_empty_space height="40px"]{H(spec["intro_h2"],spec["intro_p"])}[vc_empty_space height="20px"][/vc_column][/vc_row]') if spec.get('intro_h2') else ''
 whyrow=(f'[vc_row][vc_column][vc_empty_space height="40px"]{H(spec["why_h2"],spec["why_sub"])}[vc_empty_space height="20px"][vc_column_text]<div class="about-cards six">{why}</div><p style="text-align:center;margin-top:24px;">{spec["codes_line"]}</p>[/vc_column_text][vc_empty_space height="40px"][/vc_column][/vc_row]') if spec.get('why_h2') else ''
+placesrow=(f'[vc_row][vc_column][vc_empty_space height="40px"]{H(spec["places"][0],spec["places"][1])}[vc_empty_space height="20px"][vc_column_text]{spec["places"][2]}[/vc_column_text][vc_empty_space height="40px"][/vc_column][/vc_row]') if spec.get('places') else ''
 c=(f'[vc_row el_class="hero-bg type-hero" full_width="stretch_row"][vc_column][vc_empty_space height="40px"]'
  f'[vc_column_text]<p class="type-crumbs"><a href="/steel-buildings/">Steel Buildings</a> &raquo; {spec["crumb"]}</p>[/vc_column_text]'
  f'[vc_column_text el_class="hero-eyebrow"]<p>{spec["eyebrow"]}</p>[/vc_column_text]'
@@ -53,7 +54,7 @@ c=(f'[vc_row el_class="hero-bg type-hero" full_width="stretch_row"][vc_column][v
  f'[vc_row el_class="about-alt" full_width="stretch_row"][vc_column][vc_empty_space height="40px"]{H(spec["uses_h2"],spec["uses_sub"])}[vc_empty_space height="20px"][vc_column_text]<div class="about-cards four">{uses}</div>[/vc_column_text][vc_empty_space height="40px"][/vc_column][/vc_row]'
  f'{photorow}{whyrow}'
  f'{lookrow}[vc_row full_width="stretch_row"][vc_column][vc_empty_space height="40px"]{H("How Your Project Works","A simple process from first call to finished building.")}[vc_empty_space height="20px"][vc_column_text]<div class="about-steps">{steps}</div>[/vc_column_text][vc_empty_space height="40px"][/vc_column][/vc_row]'
- f'{d3}'
+ f'{placesrow}{d3}'
  f'[vc_row][vc_column][vc_empty_space height="40px"]{H(spec["faq_h2"])}[vc_empty_space height="20px"]{toggles}[vc_raw_html]{schema}[/vc_raw_html][vc_empty_space height="30px"][vc_column_text]<p class="type-related">Also see: {related} | <a href="/steel-buildings/">All steel building types</a></p>[/vc_column_text][vc_empty_space height="40px"][/vc_column][/vc_row]'
  f'[vc_row el_class="about-quote" full_width="stretch_row"][vc_column][vc_empty_space height="40px"]{H("Get Your Free Quote","Tell us about your project and we will provide a custom quote based on your needs.")}[vc_empty_space height="20px"][vc_raw_html]{style}[/vc_raw_html][gravityform id=\'2\' title=\'false\' description=\'false\' ajax=\'true\'][vc_column_text]<p style="text-align:center;">Prefer to talk? Call <a href="tel:8009084839">800-908-4839</a>.<br><small>By submitting this form, you agree to our <a href="/privacy-policy/">Privacy Policy</a>.</small></p>[/vc_column_text][vc_empty_space height="40px"][/vc_column][/vc_row]')
 if spec.get('photo_row'):

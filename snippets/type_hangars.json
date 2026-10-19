@@ -19,7 +19,7 @@
  ],
  "draft_title": "Aircraft Hangars (rebuild)",
  "live_title": "Aircraft Hangars",
- "hero_image_url": "https://brookssteelbuildings.com/wp-content/uploads/2026/10/hangar-02.png",
+ "hero_image_url": "https://brookssteelbuildings.com/wp-content/uploads/2020/11/IMG_3197-scaled.jpg",
  "crumb": "Aircraft Hangars",
  "eyebrow": "AIRCRAFT HANGARS",
  "h1": "Steel Aircraft Hangars in Wyoming, Utah &amp; Idaho",
@@ -175,5 +175,6 @@
  ],
  "photo_row": true,
  "photo_h2": "Steel Aircraft Hangars",
- "photo_sub": "Concept renderings of steel aircraft hangars."
+ "photo_sub": "Concept renderings of steel aircraft hangars.",
+ "hero_pos": "62%"
 }
