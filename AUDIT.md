@@ -316,3 +316,5 @@ Also: no hours, no contact email, no testimonials (none yet), do not list certif
 - Steel Buildings hub (249): Barndominiums banner card link changed from /quote/ to /steel-buildings/barndominiums/.
 - Footer "Steel Building Types" is an unlinked text widget (still lists "Churches and Schools", "RV and Storage Buildings"); not edited, needs widget edit.
 - Verified via curl: barndominiums link present on all three state pages and hub; no [bsb_split] leaks.
+
+- 2026-10-20: Owner confirmed the Barndominiums facts (Brooks supplies the steel building package/shell; foundation, interior finishing, utilities, living space, overhead doors and windows by others; commercial walk doors supplied; check building department and lender requirements). No page changes needed.
