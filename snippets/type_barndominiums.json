@@ -20,21 +20,21 @@
  "photo_row": true,
  "photos": [
   [
-   "https://placehold.co/800x600/1a3153/ffffff?text=Photo+coming+soon",
-   "Steel barndominium building"
+   "https://brookssteelbuildings.com/wp-content/uploads/2026/10/barndominium-4.png",
+   "Concept rendering of a steel barndominium with two overhead doors and stone accents"
   ],
   [
-   "https://placehold.co/800x600/1a3153/ffffff?text=Photo+coming+soon",
-   "Steel barndominium exterior"
+   "https://brookssteelbuildings.com/wp-content/uploads/2026/10/barndominium-3.png",
+   "Concept rendering of a steel barndominium shop house with a covered porch"
   ],
   [
-   "https://placehold.co/800x600/1a3153/ffffff?text=Photo+coming+soon",
-   "Steel barndominium shell and openings"
+   "https://brookssteelbuildings.com/wp-content/uploads/2026/10/barndominium-01.png",
+   "Concept rendering of a steel barndominium with a stone-column front porch"
   ]
  ],
  "draft_title": "Barndominiums (rebuild)",
  "live_title": "Barndominiums",
- "hero_image_url": "https://brookssteelbuildings.com/wp-content/uploads/2023/09/metal-building-shop-house-1-scaled.jpg",
+ "hero_image_url": "https://brookssteelbuildings.com/wp-content/uploads/2023/09/metal-building-shop-house-2-scaled.jpg",
  "crumb": "Barndominiums",
  "eyebrow": "BARNDOMINIUM STEEL BUILDINGS",
  "h1": "Steel Barndominium Buildings in Wyoming, Utah &amp; Idaho",
@@ -126,7 +126,7 @@
  ],
  "look_line": "Not sure where to start? Tell us about your plan and we will help you size the building.",
  "photo_h2": "Steel Barndominium Buildings",
- "photo_sub": "Photos of steel barndominium and shop house buildings.",
+ "photo_sub": "Concept renderings of steel barndominium and shop house buildings.",
  "faq_h2": "Barndominium Steel Building Questions",
  "faq": [
   [
@@ -176,5 +176,5 @@
    "/steel-buildings/storage-unit/"
   ]
  ],
- "hero_pos": "50%"
+ "hero_pos": "55%"
 }

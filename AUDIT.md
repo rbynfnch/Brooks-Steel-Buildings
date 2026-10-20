@@ -318,3 +318,8 @@ Also: no hours, no contact email, no testimonials (none yet), do not list certif
 - Verified via curl: barndominiums link present on all three state pages and hub; no [bsb_split] leaks.
 
 - 2026-10-20: Owner confirmed the Barndominiums facts (Brooks supplies the steel building package/shell; foundation, interior finishing, utilities, living space, overhead doors and windows by others; commercial walk doors supplied; check building department and lender requirements). No page changes needed.
+
+## 2026-10-20: Barndominiums images in
+- Hero changed to `metal-building-shop-house-2-scaled.jpg` (position 55%, same as the Wyoming hero). Edited in place: hero URL and position patched inside the base64 style block.
+- 3 image spots filled with barndominium-4.png, barndominium-3.png, barndominium-01.png (2026/10 uploads, 1536x1024 PNGs, 0.7 to 2.9 MB; run through ShortPixel). They look like AI renderings, so the section subheading and alt text say "Concept renderings".
+- Spec updated: snippets/type_barndominiums.json. Byte count after edits 27409, matches generator.
