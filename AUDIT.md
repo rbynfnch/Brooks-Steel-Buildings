@@ -323,3 +323,11 @@ Also: no hours, no contact email, no testimonials (none yet), do not list certif
 - Hero changed to `metal-building-shop-house-2-scaled.jpg` (position 55%, same as the Wyoming hero). Edited in place: hero URL and position patched inside the base64 style block.
 - 3 image spots filled with barndominium-4.png, barndominium-3.png, barndominium-01.png (2026/10 uploads, 1536x1024 PNGs, 0.7 to 2.9 MB; run through ShortPixel). They look like AI renderings, so the section subheading and alt text say "Concept renderings".
 - Spec updated: snippets/type_barndominiums.json. Byte count after edits 27409, matches generator.
+
+## 2026-10-20: "How Your Project Works" gradient + deal animation (pilot on Barndominiums 2699)
+- Design: 5 step cards in shades of the brand navy, lighter (step 1 #4a6da3 to #3f5f94) to darkest (step 5 #162a49 to #0f1d36), white text, orange icons. Files: snippets/steps-deal.css, steps-deal.js, steps-deal-override.css.
+- Animation: when the row scrolls into view (IntersectionObserver, 35%), the cards start stacked at card 1's spot (alternating tilt) and slide into place one after another (0.45 s stagger, 1.1 s ease-out). Card 1 lands first. Works with wrapped rows on mobile. Honors prefers-reduced-motion and shows normally if JS is off.
+- Live on Barndominiums only: CSS+JS raw-html block after the steps row, plus a small override block at the end of the page (the page's older .about-steps rules load later and would win: orange top border, dark text/icons). Verified with a browser at 1300px and 420px: gradient, white text, orange icons, deal runs, no JS errors.
+- Generator (build_type_page.py) now emits the new CSS and the JS block, so new/rebuilt type pages get it. NOTE: for pages built with the generator the steps CSS sits in the final style block, so the override block is not needed there.
+- Rollout to other pages (about 17 pages: type pages, state pages, about) not done yet; each needs one CSS+JS block and one override block (2 content edits) or a rebuild from the generator. Page-wide alternative: add the rules to Theme Options custom CSS (blocked earlier by firewall rule SQLi17).
+- Note: caching served a stale copy to the test browser until a cache-busting query string was added; visitors may see old CSS briefly after edits.

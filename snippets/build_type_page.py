@@ -5,6 +5,7 @@ spec=json.load(open(sys.argv[1])); out=sys.argv[2]
 def enc(h): return base64.b64encode(urllib.parse.quote(h,safe='').encode()).decode()
 src=open('snippets/build_about_page.py').read()
 css=re.search(r'css="""(.*?)"""',src,re.S).group(1)
+css+=open("snippets/steps-deal.css").read()
 css+="""
 .about-cards.four{display:grid !important;grid-template-columns:repeat(4,1fr);gap:20px}
 .about-cards.four .about-card{min-width:0 !important;flex:none !important;padding:20px 16px;text-align:center}
@@ -54,6 +55,7 @@ c=(f'[vc_row el_class="hero-bg type-hero" full_width="stretch_row"][vc_column][v
  f'[vc_row el_class="about-alt" full_width="stretch_row"][vc_column][vc_empty_space height="40px"]{H(spec["uses_h2"],spec["uses_sub"])}[vc_empty_space height="20px"][vc_column_text]<div class="about-cards four">{uses}</div>[/vc_column_text][vc_empty_space height="40px"][/vc_column][/vc_row]'
  f'{photorow}{whyrow}'
  f'{lookrow}[vc_row full_width="stretch_row"][vc_column][vc_empty_space height="40px"]{H("How Your Project Works","A simple process from first call to finished building.")}[vc_empty_space height="20px"][vc_column_text]<div class="about-steps">{steps}</div>[/vc_column_text][vc_empty_space height="40px"][/vc_column][/vc_row]'
+ f'[vc_raw_html]{enc("<script>"+open("snippets/steps-deal.js").read().strip()+"</script>")}[/vc_raw_html]'
  f'{placesrow}{d3}'
  f'[vc_row][vc_column][vc_empty_space height="40px"]{H(spec["faq_h2"])}[vc_empty_space height="20px"]{toggles}[vc_raw_html]{schema}[/vc_raw_html][vc_empty_space height="30px"][vc_column_text]<p class="type-related">Also see: {related} | <a href="/steel-buildings/">All steel building types</a></p>[/vc_column_text][vc_empty_space height="40px"][/vc_column][/vc_row]'
  f'[vc_row el_class="about-quote" full_width="stretch_row"][vc_column][vc_empty_space height="40px"]{H("Get Your Free Quote","Tell us about your project and we will provide a custom quote based on your needs.")}[vc_empty_space height="20px"][vc_raw_html]{style}[/vc_raw_html][gravityform id=\'2\' title=\'false\' description=\'false\' ajax=\'true\'][vc_column_text]<p style="text-align:center;">Prefer to talk? Call <a href="tel:8009084839">800-908-4839</a>.<br><small>By submitting this form, you agree to our <a href="/privacy-policy/">Privacy Policy</a>.</small></p>[/vc_column_text][vc_empty_space height="40px"][/vc_column][/vc_row]')
