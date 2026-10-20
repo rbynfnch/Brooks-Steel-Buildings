@@ -309,3 +309,10 @@ Also: no hours, no contact email, no testimonials (none yet), do not list certif
 - Assumed Barndominium facts to confirm with owner: Brooks supplies the steel building package (shell); foundation, interior finishing, utilities, living space, overhead doors and windows by others; commercial walk doors supplied; check building department and lender requirements.
 - Firewall: PTA158 on first Equestrian PUT with `fields`; retried once without it and it succeeded.
 - Follow-ups: add Barndominiums to "We supply every building type" lines on WY/UT/ID (primary card on WY), update Steel Buildings hub (249) cards, footer type list.
+
+## 2026-10-20: Barndominiums wired into state pages and hub
+- Wyoming (2679), Utah (2682), Idaho (2670): "We supply every building type in <State>" line now links Barndominiums (after Agricultural). FAQ "What kinds of buildings" answers left unchanged so they still match the FAQPage schema.
+- Wyoming primary cards: "Commercial and Industrial" card replaced by linked "Barndominiums" card (Commercial and Industrial still in the every-building-type line).
+- Steel Buildings hub (249): Barndominiums banner card link changed from /quote/ to /steel-buildings/barndominiums/.
+- Footer "Steel Building Types" is an unlinked text widget (still lists "Churches and Schools", "RV and Storage Buildings"); not edited, needs widget edit.
+- Verified via curl: barndominiums link present on all three state pages and hub; no [bsb_split] leaks.
