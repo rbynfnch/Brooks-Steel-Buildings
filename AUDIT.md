@@ -373,3 +373,11 @@ Also: no hours, no contact email, no testimonials (none yet), do not list certif
 
 ## 2026-10-21: SEO / AEO / GEO audit
 - Full report: AUDIT-SEO-AEO-GEO.md. Headline findings: ~80 demo-content URLs indexable and in sitemap; mobile PageSpeed 34-36 (LCP 10-20 s, 6-8 MB pages); placeholder images on Shops and Equestrian (including og:image); several titles over 60 characters; Star Valley page outdated; Organization schema thin; no llms.txt; AI crawlers allowed; no broken internal links; Lighthouse SEO 100.
+
+## 2026-10-21: audit follow-up work (partly done, then blocked by WPVibe daily limit)
+- DONE: trashed all demo content: 22 demo posts, 29 portfolio items (incl. "Project Template"), 6 demo team members, 1 demo gallery (restorable from Trash). Kept our two draft posts 2617 and 2622 (spring delivery). Demo categories/tags left (empty; excluded from sitemaps once empty).
+- DONE: titles/descriptions: Home title 62 chars; Equestrian title+desc; Barndominiums title+desc; Agricultural title; Flex title; Storage desc; Privacy desc; Privacy duplicate H1 changed to H2. Verified live.
+- Star Valley (2297) rebuild: spec snippets/state_sv.json; part A written live; parts B1/B2 and meta blocked by the daily limit. Page is currently half-built (visible "[bsb_split]" text, extra theme H1, no FAQ/quote band). See PENDING.md for the exact finishing steps.
+- PREPARED, NOT APPLIED: snippets/build_schema_blocks.py generates 17 JSON-LD payloads (snippets/schema_payloads/): LocalBusiness on Home; service catalog on the hub; Service schema on 11 type pages, 3 state pages, Star Valley.
+- Generator and snippets now use the clean 3D designer link (no ?shareid).
+- GA4 findings (read-only checks): Site Kit is connected to GA4 property 542996053, data stream G-8GYXCEEXR4, via Google tag GT-KTTDQVG7, and a Google Tag Manager container GTM-KWP8LHQJ is also installed on every page. Site Kit reports detectedEvents: [] and no synced key events. Gravity Forms is not one of Site Kit's built-in form integrations. Cannot see inside the GTM container from here.

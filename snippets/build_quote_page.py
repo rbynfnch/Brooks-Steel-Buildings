@@ -32,7 +32,7 @@ css="""
 style=enc('<style>'+''.join(l.strip() for l in css.split('\n'))+'</style>')
 def H(t,sub='',tag='h2'): return f'[ultimate_heading main_heading="{t}" main_heading_style="font-weight:bold;" sub_heading_font_size="desktop:18px;" main_heading_margin="margin-bottom:10px;"]{sub}[/ultimate_heading]'
 def card(i,t,p): return f'<div class="about-card"><i class="{i}" aria-hidden="true">&#8203;</i><h3>{t}</h3><p>{p}</p></div>'
-DESIGN='url:https%3A%2F%2Fbrooks-steel-buildings-llc.actbuildingsystems.com%2F%3Fshareid%3D97435377-73fe-4732-b906-1437a03b2e04|title:Design%20Your%20Building'
+DESIGN='url:https%3A%2F%2Fbrooks-steel-buildings-llc.actbuildingsystems.com%2F|title:Design%20Your%20Building'
 facts=[("30+","Years in the steel building industry"),("8–10 Weeks","Current turnaround"),("Engineered","For your site’s snow and wind loads"),("WY · UT · ID","Where we supply buildings")]
 strip='[vc_row bg_type="bg_color" bg_override="ex-full" el_class="facts-strip" bg_color_value="#1a3153"]'+''.join(f'[vc_column width="1/4"][vc_column_text]<div class="fact-num">{n}</div><div class="fact-label">{l}</div>[/vc_column_text][/vc_column]' for n,l in facts)+'[/vc_row]'
 def hero(crumb,eyebrow,h1,sub,btns):
