@@ -365,3 +365,6 @@ Also: no hours, no contact email, no testimonials (none yet), do not list certif
 
 ## 2026-10-21: Wyoming page photo row
 - Third image changed from hangar-steel-buildings.jpg to metal-building-shop-house-2-scaled.jpg (alt "Steel shop house building"). Images 1 and 2 kept (metal-building-shop-house-3-scaled.jpg, agricultural-steel-building.jpg). Spec snippets/state_wy.json updated. Note: shop-house-2 is also the Wyoming hero image.
+
+## 2026-10-21: Utah page photo row
+- Second image changed from IMG_1723-scaled.jpg to 2020/11/IMG_3197-scaled.jpg (alt "Steel aircraft hangar"); images 1 and 3 kept. Spec snippets/state_ut.json updated. Note: the photo shows a "CLYDE" logo on the building (also the Hangars page hero).
