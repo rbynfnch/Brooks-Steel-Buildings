@@ -16,7 +16,7 @@ import { dirname, join } from 'node:path';
 
 const month = process.argv[2];
 if (!/^\d{4}-\d{2}$/.test(month || '')) { console.error('Usage: node scripts/pull-google.mjs YYYY-MM'); process.exit(1); }
-const { GA4_PROPERTY_ID, GSC_SITE, QUOTE_EVENT = 'generate_lead', PHONE_EVENT = 'click_to_call' } = process.env;
+const { GA4_PROPERTY_ID = '542996053', GSC_SITE = 'sc-domain:brookssteelbuildings.com', QUOTE_EVENT = 'generate_lead', PHONE_EVENT = 'click_to_call' } = process.env;
 if (!GA4_PROPERTY_ID || !GSC_SITE) { console.error('Set GA4_PROPERTY_ID and GSC_SITE'); process.exit(1); }
 
 const [y, m] = month.split('-').map(Number);
