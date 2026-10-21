@@ -27,7 +27,11 @@ const end = new Date(Date.UTC(y, m, 0)).toISOString().slice(0, 10); // last day 
 // or, failing that, from the file named by GOOGLE_APPLICATION_CREDENTIALS.
 // GOOGLE_APPLICATION_CREDENTIALS_BASE64 (the same JSON, base64-encoded) is accepted for environments that mangle raw JSON.
 const rawKey = process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON || (process.env.GOOGLE_APPLICATION_CREDENTIALS_BASE64 && Buffer.from(process.env.GOOGLE_APPLICATION_CREDENTIALS_BASE64, 'base64').toString('utf8'));
-const credentials = rawKey ? JSON.parse(rawKey) : undefined;
+let credentials;
+try { credentials = rawKey ? JSON.parse(rawKey) : undefined; }
+catch { // never print the parse error: Node echoes the whole input, which here is a private key
+  console.error('Service-account key is not valid JSON (the secret was probably mangled: quotes stripped or \\n altered).\nSet GOOGLE_APPLICATION_CREDENTIALS_BASE64 to the base64 of the key file instead (base64 -w0 key.json).'); process.exit(1);
+}
 const auth = new google.auth.GoogleAuth({ credentials, scopes: ['https://www.googleapis.com/auth/analytics.readonly', 'https://www.googleapis.com/auth/webmasters.readonly'] });
 const ga = google.analyticsdata({ version: 'v1beta', auth });
 const sc = google.searchconsole({ version: 'v1', auth });
