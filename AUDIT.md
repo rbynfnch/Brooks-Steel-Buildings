@@ -362,3 +362,6 @@ Also: no hours, no contact email, no testimonials (none yet), do not list certif
 
 ## 2026-10-21: Aircraft Hangars title cleanup
 - Hangars page 2657 was already published (live, 200, correct Yoast title/description, FAQPage). Its internal post title still read "Aircraft Hangars (rebuild)" from the draft stage; renamed to "Aircraft Hangars". Checked the other type pages for "(rebuild)" leftovers in the live HTML.
+
+## 2026-10-21: Wyoming page photo row
+- Third image changed from hangar-steel-buildings.jpg to metal-building-shop-house-2-scaled.jpg (alt "Steel shop house building"). Images 1 and 2 kept (metal-building-shop-house-3-scaled.jpg, agricultural-steel-building.jpg). Spec snippets/state_wy.json updated. Note: shop-house-2 is also the Wyoming hero image.
