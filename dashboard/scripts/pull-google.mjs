@@ -7,8 +7,8 @@
 // user on the Search Console property. Never commit the key file.
 //
 // Usage: GOOGLE_APPLICATION_CREDENTIALS_JSON='<key json>' (or GOOGLE_APPLICATION_CREDENTIALS=/path/key.json) GA4_PROPERTY_ID=123456789 \
-//        GSC_SITE=sc-domain:brookssteelbuildings.com QUOTE_EVENT=generate_lead PHONE_EVENT=click_to_call \
-//        node scripts/pull-google.mjs 2026-09
+//        GSC_SITE=sc-domain:brookssteelbuildings.com QUOTE_EVENT=form_submit PHONE_EVENT=contact_link_click \
+//        node scripts/pull-google.mjs 2026-09   (add --diagnose to list events and check what the quote/phone events really count)
 import { google } from 'googleapis';
 import { writeFileSync, mkdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
@@ -16,7 +16,7 @@ import { dirname, join } from 'node:path';
 
 const month = process.argv[2];
 if (!/^\d{4}-\d{2}$/.test(month || '')) { console.error('Usage: node scripts/pull-google.mjs YYYY-MM'); process.exit(1); }
-const { GA4_PROPERTY_ID = '542996053', GSC_SITE = 'sc-domain:brookssteelbuildings.com', QUOTE_EVENT = 'generate_lead', PHONE_EVENT = 'click_to_call' } = process.env;
+const { GA4_PROPERTY_ID = '542996053', GSC_SITE = 'sc-domain:brookssteelbuildings.com', QUOTE_EVENT = 'form_submit', PHONE_EVENT = 'contact_link_click' } = process.env;
 if (!GA4_PROPERTY_ID || !GSC_SITE) { console.error('Set GA4_PROPERTY_ID and GSC_SITE'); process.exit(1); }
 
 const [y, m] = month.split('-').map(Number);
@@ -34,6 +34,15 @@ const dateRanges = [{ startDate: start, endDate: end }];
 const run = async (body) => (await ga.properties.runReport({ property, requestBody: { dateRanges, ...body } })).data.rows || [];
 const num = (r, i) => Number(r.metricValues[i].value);
 const eventFilter = (name) => ({ filter: { fieldName: 'eventName', stringFilter: { value: name } } });
+
+if (process.argv.includes('--diagnose')) {
+  // Verification aid: what events fired, where form_submit happened, and what contact_link_click clicked.
+  const show = async (title, body) => { try { const r = await run(body); console.log('\n' + title); r.forEach((x) => console.log('  ', x.dimensionValues.map((d) => d.value).join(' | '), '=>', x.metricValues[0].value)); } catch (e) { console.log('\n' + title, 'FAILED:', e.message); } };
+  await show('Events', { dimensions: [{ name: 'eventName' }], metrics: [{ name: 'eventCount' }], orderBys: [{ metric: { metricName: 'eventCount' }, desc: true }], limit: 30 });
+  await show('form_submit by page', { dimensions: [{ name: 'pagePath' }], metrics: [{ name: 'eventCount' }], dimensionFilter: eventFilter(QUOTE_EVENT), orderBys: [{ metric: { metricName: 'eventCount' }, desc: true }], limit: 15 });
+  await show(PHONE_EVENT + ' by link URL', { dimensions: [{ name: 'linkUrl' }], metrics: [{ name: 'eventCount' }], dimensionFilter: eventFilter(PHONE_EVENT), orderBys: [{ metric: { metricName: 'eventCount' }, desc: true }], limit: 15 });
+  process.exit(0);
+}
 
 const [totals] = await run({ metrics: [{ name: 'activeUsers' }, { name: 'sessions' }, { name: 'engagementRate' }] });
 const eventCount = async (name) => (await run({ metrics: [{ name: 'eventCount' }], dimensionFilter: eventFilter(name) }))[0];
