@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brooks Steel Buildings Monthly Dashboard</title>
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #f4f4f1;
+    --surface: #fcfcfb;
+    --border: #e1e0da;
+    --grid: #ebeae5;
+    --text: #0b0b0b;
+    --text-2: #52514e;
+    --text-3: #75746f;
+    --series: #2a78d6;      /* current period */
+    --series-dim: #b9c9df;  /* other months */
+    --prior: #9a9993;       /* comparison */
+    --good: #0ca30c;
+    --bad: #d03b3b;
+    --accent-bg: #eef3fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --bg: #121211; --surface: #1a1a19; --border: #2e2e2b; --grid: #262624;
+      --text: #f0efec; --text-2: #c3c2b7; --text-3: #9a998f;
+      --series: #3987e5; --series-dim: #34475f; --prior: #77766f; --accent-bg: #1f2733;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #121211; --surface: #1a1a19; --border: #2e2e2b; --grid: #262624;
+    --text: #f0efec; --text-2: #c3c2b7; --text-3: #9a998f;
+    --series: #3987e5; --series-dim: #34475f; --prior: #77766f; --accent-bg: #1f2733;
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 24px 16px 64px; }
+  h1 { font-size: 26px; margin: 0; letter-spacing: -0.01em; }
+  h2 { font-size: 17px; margin: 0 0 4px; }
+  h3 { font-size: 14px; margin: 0 0 8px; color: var(--text-2); font-weight: 600; }
+  p { margin: 0 0 8px; }
+  .muted { color: var(--text-2); }
+  .small { font-size: 13px; }
+
+  .toolbar { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; margin-bottom: 20px; }
+  .toolbar .group { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  select, button { font: inherit; color: var(--text); background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 7px 12px; cursor: pointer; }
+  button[aria-pressed="true"] { background: var(--text); color: var(--bg); border-color: var(--text); }
+  button.primary { background: var(--series); border-color: var(--series); color: #fff; }
+
+  .banner { background: #fff4d6; color: #5a4300; border: 1px solid #e8cf85; padding: 8px 12px; border-radius: 8px; margin-bottom: 16px; font-size: 13px; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .banner { background: #3a3014; color: #f1dfa6; border-color: #6b5920; } }
+  :root[data-theme="dark"] .banner { background: #3a3014; color: #f1dfa6; border-color: #6b5920; }
+
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 18px 20px; margin-bottom: 16px; }
+  .report-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 8px; margin-bottom: 16px; }
+  .eyebrow { text-transform: uppercase; letter-spacing: .08em; font-size: 12px; color: var(--text-3); margin-bottom: 4px; }
+
+  .kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 16px; }
+  .kpi { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; }
+  .kpi.hero { grid-column: span 3; background: var(--accent-bg); display: grid; grid-template-columns: auto 1fr; gap: 4px 28px; align-items: end; }
+  .kpi .label { font-size: 13px; color: var(--text-2); }
+  .kpi .value { font-size: 32px; font-weight: 700; line-height: 1.15; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+  .kpi.hero .value { font-size: 52px; }
+  .kpi .note { font-size: 12px; color: var(--text-3); }
+  .deltas { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 4px; font-size: 13px; }
+  .delta .arrow { font-size: 11px; margin-right: 3px; }
+  .delta.up .arrow { color: var(--good); }
+  .delta.down .arrow { color: var(--bad); }
+  .delta.flat .arrow { color: var(--text-3); }
+  .delta .vs { color: var(--text-3); }
+
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+
+  .bars { display: grid; gap: 8px; }
+  .bar-row { display: grid; grid-template-columns: 150px 1fr 56px; gap: 10px; align-items: center; font-size: 14px; }
+  .bar-track { height: 10px; background: var(--grid); border-radius: 5px; overflow: hidden; }
+  .bar-fill { height: 100%; background: var(--series); border-radius: 0 5px 5px 0; }
+  .bar-row .num { text-align: right; font-variant-numeric: tabular-nums; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--border); }
+  th { font-weight: 600; color: var(--text-2); font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
+  td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; }
+
+  .funnel { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; text-align: center; }
+  .funnel .step { background: var(--accent-bg); border-radius: 10px; padding: 12px; }
+  .funnel .step .value { font-size: 28px; font-weight: 700; }
+  .funnel .step .label { font-size: 13px; color: var(--text-2); }
+
+  ul.clean { margin: 0; padding-left: 18px; }
+  ul.clean li { margin-bottom: 4px; }
+
+  .chart { width: 100%; height: auto; display: block; }
+  .chart text { fill: var(--text-2); font-size: 11px; }
+  .chart .val { fill: var(--text); font-size: 12px; font-weight: 600; }
+  .chart .grid { stroke: var(--grid); stroke-width: 1; }
+  .chart rect.hit { fill: transparent; cursor: default; }
+  details { margin-top: 8px; font-size: 13px; }
+  summary { cursor: pointer; color: var(--text-2); }
+
+  #tip { position: fixed; pointer-events: none; background: var(--text); color: var(--bg); padding: 5px 9px; border-radius: 6px; font-size: 12px; opacity: 0; transition: opacity .08s; z-index: 10; white-space: nowrap; }
+
+  .tag { display: inline-block; font-size: 11px; padding: 1px 7px; border-radius: 99px; border: 1px solid var(--border); color: var(--text-2); }
+  .pos-up { color: var(--good); } .pos-down { color: var(--bad); }
+
+  .hidden { display: none !important; }
+  footer { margin-top: 24px; color: var(--text-3); font-size: 12px; }
+
+  @media (max-width: 760px) {
+    .kpis, .grid2, .grid3 { grid-template-columns: 1fr; }
+    .kpi.hero { grid-column: auto; grid-template-columns: 1fr; }
+    .bar-row { grid-template-columns: 110px 1fr 44px; }
+  }
+
+  @media print {
+    :root { --bg: #fff; }
+    body { background: #fff; font-size: 12px; }
+    .wrap { max-width: none; padding: 0; }
+    .toolbar, .banner-screen, details, #tip { display: none !important; }
+    #audit { display: none !important; }
+    #brooks { display: block !important; }
+    .card, .kpi { break-inside: avoid; box-shadow: none; }
+    .kpi .value { font-size: 24px; } .kpi.hero .value { font-size: 40px; }
+    .card { padding: 12px 14px; margin-bottom: 10px; }
+    .page-break { break-before: page; }
+    * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .bar-fill { background-image: repeating-linear-gradient(45deg, rgba(0,0,0,.18) 0 2px, transparent 2px 6px); }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="toolbar">
+    <div class="group">
+      <label for="month" class="muted small">Month</label>
+      <select id="month"></select>
+      <button id="tab-brooks" aria-pressed="true">Brooks report</button>
+      <button id="tab-audit" aria-pressed="false">Audit (internal)</button>
+    </div>
+    <div class="group">
+      <button id="theme" title="Toggle light/dark">Theme</button>
+      <button id="print" class="primary">Save report as PDF</button>
+    </div>
+  </div>
+  <div id="sample-banner" class="banner banner-screen hidden"></div>
+
+  <!-- ============ BROOKS VIEW ============ -->
+  <main id="brooks"></main>
+
+  <!-- ============ AUDIT VIEW ============ -->
+  <main id="audit" class="hidden"></main>
+
+  <footer>Sources: Google Analytics 4, Google Search Console, Google Business Profile, monthly AI-answer check, and lead outcomes reported by Brooks. Comparisons are to the previous month and the same month last year.</footer>
+</div>
+<div id="tip" role="tooltip"></div>
+
+<script src="data/data.js"></script>
+<script>
+(function () {
+  const D = window.DASHBOARD_DATA;
+  const months = D.months;
+  const $ = (id) => document.getElementById(id);
+  const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const nf = new Intl.NumberFormat('en-US');
+  const fmt = (n) => (n == null ? '—' : nf.format(Math.round(n)));
+  const pct = (n, d = 1) => (n == null ? '—' : (n * 100).toFixed(d) + '%');
+
+  const mdate = (k) => new Date(Date.UTC(+k.slice(0, 4), +k.slice(5, 7) - 1, 1));
+  const longName = (k) => mdate(k).toLocaleDateString('en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' });
+  const shortName = (k) => mdate(k).toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' });
+  const monthShortYear = (k) => mdate(k).toLocaleDateString('en-US', { month: 'short', year: 'numeric', timeZone: 'UTC' });
+  const prevKey = (k) => { const d = mdate(k); d.setUTCMonth(d.getUTCMonth() - 1); return d.toISOString().slice(0, 7); };
+  const yoyKey = (k) => (+k.slice(0, 4) - 1) + k.slice(4);
+  const byKey = Object.fromEntries(months.map((m) => [m.month, m]));
+
+  /* ---------- comparison chips ---------- */
+  function delta(cur, prev, label, opts = {}) {
+    if (cur == null || prev == null || prev === 0 && !opts.points) return `<span class="delta flat"><span class="vs">${esc(label)}: n/a</span></span>`;
+    let change, text;
+    if (opts.points) { change = (cur - prev) * 100; text = Math.abs(change).toFixed(1) + ' pts'; }
+    else if (opts.abs) { change = cur - prev; text = Math.abs(change) + ''; }
+    else { change = (cur - prev) / prev; text = Math.abs(change * 100).toFixed(0) + '%'; }
+    const flat = Math.abs(change) < (opts.points ? 0.05 : opts.abs ? 0.5 : 0.005);
+    const dir = flat ? 'flat' : change > 0 ? 'up' : 'down';
+    const arrow = flat ? '■' : change > 0 ? '▲' : '▼';
+    const word = flat ? 'No change' : (change > 0 ? 'Up ' : 'Down ') + text;
+    return `<span class="delta ${dir}"><span class="arrow" aria-hidden="true">${arrow}</span>${word} <span class="vs">${esc(label)}</span></span>`;
+  }
+  function deltas(key, getter, opts) {
+    const cur = getter(byKey[key]);
+    const p = byKey[prevKey(key)], y = byKey[yoyKey(key)];
+    return `<div class="deltas">${p ? delta(cur, getter(p), 'vs ' + shortName(prevKey(key)), opts) : ''}${y ? delta(cur, getter(y), 'vs ' + monthShortYear(yoyKey(key)), opts) : ''}</div>`;
+  }
+  const safe = (fn) => (m) => { try { return fn(m); } catch (e) { return null; } };
+
+  /* ---------- tooltip ---------- */
+  const tip = $('tip');
+  function bindTips(root) {
+    root.querySelectorAll('[data-tip]').forEach((el) => {
+      el.addEventListener('mousemove', (e) => { tip.textContent = el.dataset.tip; tip.style.opacity = 1; tip.style.left = e.clientX + 12 + 'px'; tip.style.top = e.clientY + 14 + 'px'; });
+      el.addEventListener('mouseleave', () => { tip.style.opacity = 0; });
+    });
+  }
+
+  /* ---------- charts ---------- */
+  function monthlyBars(key, getter, noun) {
+    const idx = months.findIndex((m) => m.month === key);
+    const slice = months.slice(Math.max(0, idx - 12), idx + 1);
+    const vals = slice.map((m) => getter(m) || 0);
+    const max = Math.max(...vals, 1);
+    const top = Math.ceil(max / 10) * 10 || 10;
+    const W = 720, H = 220, L = 34, B = 26, T = 18, R = 8;
+    const bw = (W - L - R) / slice.length;
+    let svg = `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(noun)} by month">`;
+    [0, 0.5, 1].forEach((f) => {
+      const y = T + (H - T - B) * (1 - f);
+      svg += `<line class="grid" x1="${L}" x2="${W - R}" y1="${y}" y2="${y}"/><text x="${L - 6}" y="${y + 4}" text-anchor="end">${Math.round(top * f)}</text>`;
+    });
+    slice.forEach((m, i) => {
+      const v = vals[i], h = (H - T - B) * (v / top), x = L + i * bw + bw * 0.18, w = bw * 0.64, y = H - B - h;
+      const sel = m.month === key;
+      svg += `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="3" fill="${sel ? 'var(--series)' : 'var(--series-dim)'}"/>`;
+      if (sel) svg += `<text class="val" x="${x + w / 2}" y="${y - 5}" text-anchor="middle">${v}</text>`;
+      svg += `<text x="${x + w / 2}" y="${H - 8}" text-anchor="middle">${shortName(m.month)}</text>`;
+      svg += `<rect class="hit" x="${L + i * bw}" y="${T}" width="${bw}" height="${H - T - B}" data-tip="${esc(longName(m.month))}: ${v} ${esc(noun)}"/>`;
+    });
+    svg += '</svg>';
+    const rows = slice.map((m, i) => `<tr><td>${longName(m.month)}</td><td class="n">${vals[i]}</td></tr>`).join('');
+    return svg + `<details><summary>View as table</summary><table><thead><tr><th>Month</th><th class="n">${esc(noun)}</th></tr></thead><tbody>${rows}</tbody></table></details>`;
+  }
+
+  function hbars(entries, total, fixedMax) {
+    const max = fixedMax || Math.max(...entries.map((e) => e[1]), 1);
+    return `<div class="bars">${entries.map(([label, v]) =>
+      `<div class="bar-row"><span>${esc(label)}</span><div class="bar-track" data-tip="${esc(label)}: ${v}${total ? ' (' + Math.round(v / total * 100) + '%)' : ''}"><div class="bar-fill" style="width:${(v / max) * 100}%"></div></div><span class="num">${fmt(v)}</span></div>`).join('')}</div>`;
+  }
+
+  function posChange(cur, prev) {
+    if (prev == null) return '<span class="muted">new</span>';
+    const d = +(prev - cur).toFixed(1);
+    if (Math.abs(d) < 0.1) return '<span class="muted">■ 0.0</span>';
+    return d > 0 ? `<span class="pos-up">▲ ${d.toFixed(1)}</span>` : `<span class="pos-down">▼ ${Math.abs(d).toFixed(1)}</span>`;
+  }
+
+  /* ---------- BROOKS VIEW ---------- */
+  function renderBrooks(key) {
+    const m = byKey[key];
+    const g = m.ga4, s = m.gsc, b = m.gbp, a = m.aeo, L = m.leads;
+    const conv = (x) => x.ga4.quoteRequests / x.ga4.sessions;
+    const gbpActions = (x) => x.gbp.calls + x.gbp.directions + x.gbp.websiteClicks;
+    const qTotal = g.quoteRequests;
+
+    const kpi = (cls, label, value, getter, note, opts) =>
+      `<div class="kpi ${cls}"><div><div class="label">${label}</div><div class="value">${value}</div></div><div>${deltas(key, safe(getter), opts)}${note ? `<div class="note">${note}</div>` : ''}</div></div>`;
+
+    const lead = L
+      ? `<div class="funnel">
+          <div class="step"><div class="value">${fmt(L.received)}</div><div class="label">Quote requests received</div></div>
+          <div class="step"><div class="value">${fmt(L.qualified)}</div><div class="label">Qualified leads</div></div>
+          <div class="step"><div class="value">${fmt(L.won)}</div><div class="label">Became customers</div></div>
+        </div>
+        <p class="small muted" style="margin-top:10px">Numbers reported by Brooks. About ${Math.round(L.won / L.received * 100)}% of requests became customers.</p>`
+      : `<p class="muted">Awaiting Brooks's numbers for ${longName(key)}. Once reported, this section shows how many requests were qualified and how many became customers.</p>`;
+
+    const kwRows = s.keywords.map((k) => {
+      const pk = (byKey[prevKey(key)]?.gsc.keywords || []).find((x) => x.query === k.query);
+      return `<tr><td>${esc(k.query)}</td><td class="n">${fmt(k.clicks)}</td><td class="n">${k.position.toFixed(1)}</td><td class="n">${posChange(k.position, pk?.position)}</td></tr>`;
+    }).join('');
+
+    const engines = Object.entries(a.cited);
+
+    const nar = m.narrative || { done: [], moved: [], next: [] };
+    const list = (arr) => arr.length ? `<ul class="clean">${arr.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>` : '<p class="muted small">Nothing logged.</p>';
+
+    $('brooks').innerHTML = `
+      <div class="report-head">
+        <div><div class="eyebrow">Monthly website report</div><h1>${longName(key)}</h1><div class="muted">brookssteelbuildings.com</div></div>
+        <div class="muted small">Prepared ${new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</div>
+      </div>
+
+      <div class="kpis">
+        ${kpi('hero', 'Quote requests', fmt(g.quoteRequests), (x) => x.ga4.quoteRequests, 'Real requests after removing spam submissions')}
+        ${kpi('', 'Phone calls from the website', fmt(g.phoneClicks), (x) => x.ga4.phoneClicks, 'Taps on the phone number')}
+        ${kpi('', 'Visitors who asked for a quote', pct(conv(m), 2), safe(conv), 'Quote requests ÷ visits', { points: true })}
+        ${kpi('', 'Website visitors', fmt(g.users), (x) => x.ga4.users, 'Unique people who visited the site')}
+        ${kpi('', 'Visits from Google search', fmt(s.clicks), (x) => x.gsc.clicks, 'Clicks from search results')}
+        ${kpi('', 'AI answer visibility', `${a.citedInAny} of ${a.panelSize}`, (x) => x.aeo.citedInAny, 'Buyer questions where an AI assistant mentions Brooks', { abs: true })}
+        ${kpi('', 'Google Business Profile actions', fmt(gbpActions(m)), safe(gbpActions), 'Calls, directions and website clicks from Google Maps/Search')}
+      </div>
+
+      <div class="card">
+        <h2>Quote requests, last 13 months</h2>
+        <p class="small muted">Spring and summer are naturally busier, so compare to the same month last year.</p>
+        ${monthlyBars(key, (x) => x.ga4.quoteRequests, 'quote requests')}
+      </div>
+
+      <div class="grid2">
+        <div class="card">
+          <h2>Where quote requests came from</h2>
+          <p class="small muted">${fmt(qTotal)} requests this month</p>
+          ${hbars(Object.entries(g.quoteRequestsBySource).sort((x, y) => y[1] - x[1]), qTotal)}
+        </div>
+        <div class="card">
+          <h2>From request to customer</h2>
+          ${lead}
+        </div>
+      </div>
+
+      <div class="card page-break">
+        <h2>Search visibility</h2>
+        <p class="small muted">${fmt(s.clicks)} clicks from ${fmt(s.impressions)} appearances in Google results. ${fmt(s.nonBrandedClicks)} clicks came from people who did not already know the Brooks name, which is the main sign of new customers finding the business.</p>
+        <table>
+          <thead><tr><th>Search phrase</th><th class="n">Clicks</th><th class="n">Avg. position</th><th class="n">Change vs last month</th></tr></thead>
+          <tbody>${kwRows}</tbody>
+        </table>
+        <p class="small muted" style="margin-top:8px">Position 1 is the top result. Lower numbers are better.</p>
+      </div>
+
+      <div class="card">
+        <h2>Found in AI answers</h2>
+        <p class="small muted">We ask the same ${a.panelSize} buyer questions each month in each assistant and count the answers that mention Brooks. ${fmt(g.aiSessions)} website visits came directly from AI assistants this month.</p>
+        ${hbars(engines.map(([k, v]) => [k + ' (of ' + a.panelSize + ')', v]), 0, a.panelSize)}
+      </div>
+
+      <div class="grid3">
+        <div class="card"><h3>What we did</h3>${list(nar.done)}</div>
+        <div class="card"><h3>What moved</h3>${list(nar.moved)}</div>
+        <div class="card"><h3>What's next</h3>${list(nar.next)}</div>
+      </div>`;
+    bindTips($('brooks'));
+  }
+
+  /* ---------- AUDIT VIEW ---------- */
+  function renderAudit(key) {
+    const m = byKey[key], g = m.ga4, s = m.gsc, t = m.tech, a = m.aeo;
+    const prev = byKey[prevKey(key)];
+    const table = (head, rows) => `<table><thead><tr>${head.map((h, i) => `<th class="${i ? 'n' : ''}">${h}</th>`).join('')}</tr></thead><tbody>${rows.map((r) => `<tr>${r.map((c, i) => `<td class="${i ? 'n' : ''}">${c}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
+    const stat = (label, val, getter, opts) => `<div class="kpi"><div class="label">${label}</div><div class="value" style="font-size:24px">${val}</div>${deltas(key, safe(getter), opts)}</div>`;
+    const dev = Object.entries(g.devices).map(([k, v]) => `${k} ${Math.round(v * 100)}%`).join(' · ');
+
+    $('audit').innerHTML = `
+      <div class="report-head"><div><div class="eyebrow">Internal audit view</div><h1>${longName(key)}</h1></div><span class="tag">Not for client PDF</span></div>
+
+      <h2 style="margin:8px 0">Form funnel and data quality</h2>
+      <div class="kpis">
+        ${stat('Form starts', fmt(g.formStarts), (x) => x.ga4.formStarts)}
+        ${stat('Submissions (after spam filter)', fmt(g.quoteRequests), (x) => x.ga4.quoteRequests)}
+        ${stat('Spam submissions filtered', fmt(g.spamFiltered), (x) => x.ga4.spamFiltered)}
+        ${stat('Form completion rate', pct(g.quoteRequests / g.formStarts, 0), safe((x) => x.ga4.quoteRequests / x.ga4.formStarts), { points: true })}
+        ${stat('Engagement rate', pct(g.engagementRate), (x) => x.ga4.engagementRate, { points: true })}
+        ${stat('Users', fmt(g.users), (x) => x.ga4.users)}
+      </div>
+      <p class="small muted">Devices: ${dev}</p>
+
+      <div class="card">
+        <h2>Landing pages: sessions and quote requests</h2>
+        ${table(['Page', 'Sessions', 'Quotes', 'Quote rate'], g.topLandingPages.map((p) => [esc(p.page), fmt(p.sessions), fmt(p.quotes), pct(p.quotes / p.sessions, 1)]))}
+      </div>
+
+      <div class="grid2">
+        <div class="card">
+          <h2>Striking distance (positions 8–20)</h2>
+          <p class="small muted">Small on-page or link improvements can move these to page one.</p>
+          ${table(['Query', 'Position', 'Impressions'], s.strikingDistance.map((k) => [esc(k.query), k.position.toFixed(1), fmt(k.impressions)]))}
+        </div>
+        <div class="card">
+          <h2>Pages with impressions but weak CTR</h2>
+          <p class="small muted">Rewrite titles and descriptions first.</p>
+          ${table(['Page', 'Impressions', 'CTR'], s.lowCtrPages.map((p) => [esc(p.page), fmt(p.impressions), pct(p.ctr, 1)]))}
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Technical health</h2>
+        <p class="small muted">Baseline from the 2026-10-21 audit: mobile PageSpeed 34 to 36, LCP 10 to 20 s, demo content in the sitemap.</p>
+        ${table(['Metric', 'This month', 'Last month'], [
+          ['PageSpeed (mobile)', t.perfScoreMobile, prev ? prev.tech.perfScoreMobile : '—'],
+          ['LCP (mobile, seconds)', t.lcpMobileSeconds, prev ? prev.tech.lcpMobileSeconds : '—'],
+          ['CLS', t.cls, prev ? prev.tech.cls : '—'],
+          ['INP (ms)', t.inpMs, prev ? prev.tech.inpMs : '—'],
+          ['Indexed pages', t.indexedPages, prev ? prev.tech.indexedPages : '—'],
+          ['Not indexed', t.notIndexedPages, prev ? prev.tech.notIndexedPages : '—'],
+          ['404 errors', t.errors404, prev ? prev.tech.errors404 : '—'],
+          ['Referring domains', t.referringDomains, prev ? prev.tech.referringDomains : '—'],
+          ['New / lost links', `${t.newLinks} / ${t.lostLinks}`, prev ? `${prev.tech.newLinks} / ${prev.tech.lostLinks}` : '—'],
+        ])}
+      </div>
+
+      <div class="grid2">
+        <div class="card">
+          <h2>AI crawler hits (server logs)</h2>
+          ${table(['Bot', 'Hits'], Object.entries(t.aiCrawlerHits).map(([k, v]) => [k, fmt(v)]))}
+        </div>
+        <div class="card">
+          <h2>Competitors cited in the AI prompt panel</h2>
+          <p class="small muted">Of ${a.panelSize} prompts. Brooks is cited in ${a.citedInAny} in at least one engine.</p>
+          ${table(['Competitor', 'Prompts'], a.competitorsCited.map((c) => [esc(c.name), c.prompts]))}
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Sessions by source</h2>
+        ${hbars(Object.entries(g.sessionsBySource).sort((x, y) => y[1] - x[1]), g.sessions)}
+      </div>`;
+    bindTips($('audit'));
+  }
+
+  /* ---------- wiring ---------- */
+  const sel = $('month');
+  sel.innerHTML = months.slice().reverse().map((m) => `<option value="${m.month}">${longName(m.month)}</option>`).join('');
+  function render() {
+    const key = sel.value;
+    renderBrooks(key); renderAudit(key);
+    const banner = $('sample-banner');
+    if (byKey[key].sample) { banner.textContent = 'Sample data: these numbers are placeholders for layout review and are not real Brooks Steel Buildings results.'; banner.classList.remove('hidden'); }
+    else banner.classList.add('hidden');
+  }
+  sel.addEventListener('change', render);
+  function tab(which) {
+    $('brooks').classList.toggle('hidden', which !== 'brooks');
+    $('audit').classList.toggle('hidden', which !== 'audit');
+    $('tab-brooks').setAttribute('aria-pressed', which === 'brooks');
+    $('tab-audit').setAttribute('aria-pressed', which === 'audit');
+  }
+  $('tab-brooks').onclick = () => tab('brooks');
+  $('tab-audit').onclick = () => tab('audit');
+  $('print').onclick = () => { tab('brooks'); window.print(); };
+  $('theme').onclick = () => {
+    const cur = document.documentElement.dataset.theme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.dataset.theme = cur === 'dark' ? 'light' : 'dark';
+  };
+  render();
+})();
+</script>
+</body>
+</html>

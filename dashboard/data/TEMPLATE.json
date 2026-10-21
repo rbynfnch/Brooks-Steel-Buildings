@@ -1,0 +1,18 @@
+{
+  "month": "YYYY-MM",
+  "gbp": { "views": 0, "calls": 0, "directions": 0, "websiteClicks": 0 },
+  "tech": {
+    "lcpMobileSeconds": 0, "cls": 0, "inpMs": 0, "perfScoreMobile": 0,
+    "indexedPages": 0, "notIndexedPages": 0, "errors404": 0,
+    "referringDomains": 0, "newLinks": 0, "lostLinks": 0,
+    "aiCrawlerHits": { "GPTBot": 0, "ClaudeBot": 0, "PerplexityBot": 0 }
+  },
+  "aeo": {
+    "panelSize": 20,
+    "cited": { "ChatGPT": 0, "Perplexity": 0, "Gemini": 0, "Google AI Overviews": 0 },
+    "citedInAny": 0,
+    "competitorsCited": [{ "name": "Competitor A", "prompts": 0 }]
+  },
+  "leads": null,
+  "narrative": { "done": [], "moved": [], "next": [] }
+}

@@ -3,3 +3,7 @@
 wp-config.php
 .env
 node_modules/
+
+# dashboard data (real client metrics must not be committed; this repo is public)
+dashboard/data/*
+!dashboard/data/TEMPLATE.json
