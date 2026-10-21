@@ -352,3 +352,10 @@ Also: no hours, no contact email, no testimonials (none yet), do not list certif
 - Conditional logic: Building Use, Timeline, Dimensions, Roof Slope, Roof Type and Project Notes stay hidden until the City field (14.3) has a value, by design. Verified by typing a city: all six appear.
 - Submit button already orange on form 1 (earlier generic rule `.gform_wrapper .gform_button` applies); the form-2-specific ID rules on the page are now unused and harmless.
 - Not verified: reCAPTCHA widget does not render in the headless test browser (label only), so check it by hand; form 1 confirmation/redirect and notification email not tested (no live submission made, to avoid sending a real lead).
+
+## 2026-10-21: 3D designer link updated everywhere
+- New URL: https://brooks-steel-buildings-llc.actbuildingsystems.com/ (no ?shareid parameter).
+- Header "Design a Building" button (every page): option `header-elements-button-1-url` held an email-security rewritten link (urldefense.proofpoint.com ...). Replaced with the clean URL in BOTH theme option copies: `the7childbrookssteelbuildings` (active) and `the7`.
+- Page content (replace_all of the encoded `?shareid=97435377-73fe-4732-b906-1437a03b2e04` in the button links) on 18 pages: Home 2476 (2), Steel Buildings hub 249, Get a Quote 2695 (2), Thank You 2697, Commercial 1207, Flex 2597, Agricultural 2614, Industrial 2635, Shops 1223, Hangars 2657, Recreational 1233, Schools 2218, Storage 1288, Equestrian 2215, Barndominiums 2699, Wyoming 2679, Utah 2682, Idaho 2670.
+- Verified by crawling every sitemap page plus Barndominiums and Thank You: no `shareid=97435377`, `urldefense` or rewritten links remain; clean link present on each. About and Star Valley only had the header link (fixed by the option change).
+- Not changed: draft pages, old drafts (-old), blog test posts only have the header link (fixed). Footer has no designer link.
