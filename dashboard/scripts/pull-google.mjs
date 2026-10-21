@@ -6,7 +6,7 @@
 // and "Search Console API", then add the service account email as a Viewer on the GA4 property and as a
 // user on the Search Console property. Never commit the key file.
 //
-// Usage: GOOGLE_APPLICATION_CREDENTIALS=/path/key.json GA4_PROPERTY_ID=123456789 \
+// Usage: GOOGLE_APPLICATION_CREDENTIALS_JSON='<key json>' (or GOOGLE_APPLICATION_CREDENTIALS=/path/key.json) GA4_PROPERTY_ID=123456789 \
 //        GSC_SITE=sc-domain:brookssteelbuildings.com QUOTE_EVENT=generate_lead PHONE_EVENT=click_to_call \
 //        node scripts/pull-google.mjs 2026-09
 import { google } from 'googleapis';
@@ -23,7 +23,10 @@ const [y, m] = month.split('-').map(Number);
 const start = `${month}-01`;
 const end = new Date(Date.UTC(y, m, 0)).toISOString().slice(0, 10); // last day of month
 
-const auth = new google.auth.GoogleAuth({ scopes: ['https://www.googleapis.com/auth/analytics.readonly', 'https://www.googleapis.com/auth/webmasters.readonly'] });
+// Key comes from GOOGLE_APPLICATION_CREDENTIALS_JSON (the key file's contents, from the environment secret)
+// or, failing that, from the file named by GOOGLE_APPLICATION_CREDENTIALS.
+const credentials = process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON ? JSON.parse(process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON) : undefined;
+const auth = new google.auth.GoogleAuth({ credentials, scopes: ['https://www.googleapis.com/auth/analytics.readonly', 'https://www.googleapis.com/auth/webmasters.readonly'] });
 const ga = google.analyticsdata({ version: 'v1beta', auth });
 const sc = google.searchconsole({ version: 'v1', auth });
 const property = `properties/${GA4_PROPERTY_ID}`;
