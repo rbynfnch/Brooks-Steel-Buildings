@@ -359,3 +359,6 @@ Also: no hours, no contact email, no testimonials (none yet), do not list certif
 - Page content (replace_all of the encoded `?shareid=97435377-73fe-4732-b906-1437a03b2e04` in the button links) on 18 pages: Home 2476 (2), Steel Buildings hub 249, Get a Quote 2695 (2), Thank You 2697, Commercial 1207, Flex 2597, Agricultural 2614, Industrial 2635, Shops 1223, Hangars 2657, Recreational 1233, Schools 2218, Storage 1288, Equestrian 2215, Barndominiums 2699, Wyoming 2679, Utah 2682, Idaho 2670.
 - Verified by crawling every sitemap page plus Barndominiums and Thank You: no `shareid=97435377`, `urldefense` or rewritten links remain; clean link present on each. About and Star Valley only had the header link (fixed by the option change).
 - Not changed: draft pages, old drafts (-old), blog test posts only have the header link (fixed). Footer has no designer link.
+
+## 2026-10-21: Aircraft Hangars title cleanup
+- Hangars page 2657 was already published (live, 200, correct Yoast title/description, FAQPage). Its internal post title still read "Aircraft Hangars (rebuild)" from the draft stage; renamed to "Aircraft Hangars". Checked the other type pages for "(rebuild)" leftovers in the live HTML.
