@@ -25,7 +25,9 @@ const end = new Date(Date.UTC(y, m, 0)).toISOString().slice(0, 10); // last day 
 
 // Key comes from GOOGLE_APPLICATION_CREDENTIALS_JSON (the key file's contents, from the environment secret)
 // or, failing that, from the file named by GOOGLE_APPLICATION_CREDENTIALS.
-const credentials = process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON ? JSON.parse(process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON) : undefined;
+// GOOGLE_APPLICATION_CREDENTIALS_BASE64 (the same JSON, base64-encoded) is accepted for environments that mangle raw JSON.
+const rawKey = process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON || (process.env.GOOGLE_APPLICATION_CREDENTIALS_BASE64 && Buffer.from(process.env.GOOGLE_APPLICATION_CREDENTIALS_BASE64, 'base64').toString('utf8'));
+const credentials = rawKey ? JSON.parse(rawKey) : undefined;
 const auth = new google.auth.GoogleAuth({ credentials, scopes: ['https://www.googleapis.com/auth/analytics.readonly', 'https://www.googleapis.com/auth/webmasters.readonly'] });
 const ga = google.analyticsdata({ version: 'v1beta', auth });
 const sc = google.searchconsole({ version: 'v1', auth });
