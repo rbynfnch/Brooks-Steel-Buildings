@@ -368,3 +368,8 @@ Also: no hours, no contact email, no testimonials (none yet), do not list certif
 
 ## 2026-10-21: Utah page photo row
 - Second image changed from IMG_1723-scaled.jpg to 2020/11/IMG_3197-scaled.jpg (alt "Steel aircraft hangar"); images 1 and 3 kept. Spec snippets/state_ut.json updated. Note: the photo shows a "CLYDE" logo on the building (also the Hangars page hero).
+
+- OPEN ITEM (owner): still need 3 photos for the Equestrian Riding Arenas page (placeholders in the photo row) and a larger hero image than the current 400x300 arena photo.
+
+## 2026-10-21: SEO / AEO / GEO audit
+- Full report: AUDIT-SEO-AEO-GEO.md. Headline findings: ~80 demo-content URLs indexable and in sitemap; mobile PageSpeed 34-36 (LCP 10-20 s, 6-8 MB pages); placeholder images on Shops and Equestrian (including og:image); several titles over 60 characters; Star Valley page outdated; Organization schema thin; no llms.txt; AI crawlers allowed; no broken internal links; Lighthouse SEO 100.
