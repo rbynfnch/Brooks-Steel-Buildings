@@ -381,3 +381,7 @@ Also: no hours, no contact email, no testimonials (none yet), do not list certif
 - PREPARED, NOT APPLIED: snippets/build_schema_blocks.py generates 17 JSON-LD payloads (snippets/schema_payloads/): LocalBusiness on Home; service catalog on the hub; Service schema on 11 type pages, 3 state pages, Star Valley.
 - Generator and snippets now use the clean 3D designer link (no ?shareid).
 - GA4 findings (read-only checks): Site Kit is connected to GA4 property 542996053, data stream G-8GYXCEEXR4, via Google tag GT-KTTDQVG7, and a Google Tag Manager container GTM-KWP8LHQJ is also installed on every page. Site Kit reports detectedEvents: [] and no synced key events. Gravity Forms is not one of Site Kit's built-in form integrations. Cannot see inside the GTM container from here.
+
+## 2026-10-22: Human-feel page refresh: interview prepared
+- Priority pages (owner confirmed): Shops and Garages, Agricultural, Storage Units, Barndominiums.
+- Interview document for Brooks to answer: docs/Brooks-Website-Interview-Questions.docx (13 pages: About Brooks 7 questions; Shops 10; Agricultural 10; Storage 9; Barndominiums 10; project fact sheet and photo checklist; 11 website facts to confirm). Answers will become short first-person sections; nothing invented. No site changes made. WPVibe still limited until the daily reset; Star Valley finish and schema work remain pending (see PENDING.md).
