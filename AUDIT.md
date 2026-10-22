@@ -386,3 +386,9 @@ Also: no hours, no contact email, no testimonials (none yet), do not list certif
 - Priority pages (owner confirmed): Shops and Garages, Agricultural, Storage Units, Barndominiums.
 - Interview document for Brooks to answer: docs/Brooks-Website-Interview-Questions.docx (13 pages: About Brooks 7 questions; Shops 10; Agricultural 10; Storage 9; Barndominiums 10; project fact sheet and photo checklist; 11 website facts to confirm). Answers will become short first-person sections; nothing invented. No site changes made. WPVibe still limited until the daily reset; Star Valley finish and schema work remain pending (see PENDING.md).
 - 2026-10-22: Interview document trimmed per owner: now 4 pages, one per building type (Shops, Agricultural, Storage, Barndominiums), 5 questions each plus a one-row project box. Dropped the About, facts-confirmation and long project-sheet sections (facts already confirmed by the owner earlier; barndominium scope confirmed).
+
+## 2026-10-22: Star Valley page finished
+- WPVibe access returned. Finished the rebuild of page 2297 (B1 then B2; final size 31,417 bytes, as expected). Meta set: header title and sidebar disabled; Yoast title "Star Valley, WY Steel Buildings | Brooks Steel Buildings" (56), description (153), focus keyword "star valley steel buildings"; page title "Star Valley, Wyoming Steel Buildings".
+- Verified live: 200, one H1, no [bsb_split], FAQPage, quote form, canonical correct, clean 3D link, in page-sitemap. Linked from the Wyoming page only; NOT added to the navigation menu or Utah/Idaho pages (owner decision: keep it as an SEO landing page).
+- Interview doc created as a Claude Doc for Google Docs export: https://claude.ai/artifact/Ugu75ACJWiMqBrZDfwebmr (4 sections, fill-in tables).
+- Still pending (see PENDING.md): Yoast Organization profile links and the 17 JSON-LD blocks.
