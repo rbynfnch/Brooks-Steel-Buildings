@@ -392,3 +392,9 @@ Also: no hours, no contact email, no testimonials (none yet), do not list certif
 - Verified live: 200, one H1, no [bsb_split], FAQPage, quote form, canonical correct, clean 3D link, in page-sitemap. Linked from the Wyoming page only; NOT added to the navigation menu or Utah/Idaho pages (owner decision: keep it as an SEO landing page).
 - Interview doc created as a Claude Doc for Google Docs export: https://claude.ai/artifact/Ugu75ACJWiMqBrZDfwebmr (4 sections, fill-in tables).
 - Still pending (see PENDING.md): Yoast Organization profile links and the 17 JSON-LD blocks.
+
+## 2026-10-22 — Per-page service/company schema complete
+- JSON-LD applied to all 17 pages: Service on 11 type pages, 3 state pages and Star Valley; hub (249) OfferCatalog; Home (2476) full LocalBusiness (needed double-quoted shortcode anchor).
+- Verified live: hub 12 Service blocks, state/type pages 1 each, LocalBusiness @id present, logo URL 200.
+- Yoast Instagram/LinkedIn options set; Organization sameAs on Home still to re-check.
+- Open: GTM/GA4 event names from owner (generate_lead on /thank-you/, phone_click), guide articles discussion.
